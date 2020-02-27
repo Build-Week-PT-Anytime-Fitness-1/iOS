@@ -28,6 +28,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        configureDelegates()
     }
     
     //MARK: - Private Functions
@@ -63,6 +64,13 @@ class SignUpViewController: UIViewController {
         
     }
     
+    private func configureDelegates() {
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        authCodeTextField.delegate = self
+    }
+    
     //MARK: - IBActions
     @IBAction func showPasswordPressed(_ sender: Any) {
         if showPassword == false {
@@ -72,6 +80,14 @@ class SignUpViewController: UIViewController {
             showPassword = false
             showPasswordButton.layer.backgroundColor = UIColor.clear.cgColor
         }
+    }
+    
+}
+
+extension SignUpViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
     
 }
