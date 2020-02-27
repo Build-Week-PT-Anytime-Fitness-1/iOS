@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pii-oa-RaX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Landing Page View Controller-->
+        <scene sceneID="Rnp-Xt-pjv">
+            <objects>
+                <viewController id="taz-ci-Hjb" customClass="LandingPageViewController" customModule="Anywhere_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q4z-8q-CWA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingPageImage" translatesAutoresizingMaskIntoConstraints="NO" id="aeA-sn-K8Q">
+                                <rect key="frame" x="0.0" y="146.66666666666663" width="375" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aeA-sn-K8Q" secondAttribute="height" multiplier="375:272" id="7nl-lu-r9p"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attend classes that are run by local instructors, anywhere!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUf-DQ-lI9">
+                                <rect key="frame" x="8" y="438.66666666666669" width="359" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                <color key="textColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lpj-ex-g8M">
+                                <rect key="frame" x="86.333333333333329" y="751" width="202.33333333333337" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-h0-xYi">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.33333333333334" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZl-S7-mn1">
+                                        <rect key="frame" x="163.33333333333331" y="0.0" width="39" height="27"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                        <state key="normal" title="Log in.">
+                                            <color key="titleColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="hNo-Tw-NaG" kind="show" id="0WX-Hr-gH2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jK-lu-8Rx">
+                                <rect key="frame" x="106" y="577" width="163" height="44"/>
+                                <color key="backgroundColor" red="0.82651406530000004" green="0.2419953346" blue="0.3365478516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="6pZ-So-gOP"/>
+                                    <constraint firstAttribute="height" constant="44" id="p3V-CD-zBa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                <color key="tintColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Join Now!">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iVT-dM-Vsj" kind="show" id="79t-VL-s5g"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ibJ-Tm-ecK">
+                                <rect key="frame" x="105.66666666666669" y="50.000000000000007" width="164" height="76.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYy-82-WXT">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="38.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP0-kM-hjP">
+                                        <rect key="frame" x="23.333333333333336" y="38.333333333333329" width="117.33333333333331" height="38.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aeA-sn-K8Q" firstAttribute="leading" secondItem="O7Q-Iy-9Sr" secondAttribute="leading" id="6rd-OV-bEU"/>
+                            <constraint firstItem="6jK-lu-8Rx" firstAttribute="centerX" secondItem="O7Q-Iy-9Sr" secondAttribute="centerX" id="6z5-Ps-2IU"/>
+                            <constraint firstItem="qUf-DQ-lI9" firstAttribute="leading" secondItem="O7Q-Iy-9Sr" secondAttribute="leading" constant="8" id="AFe-nw-kdR"/>
+                            <constraint firstItem="aeA-sn-K8Q" firstAttribute="top" secondItem="ibJ-Tm-ecK" secondAttribute="bottom" constant="20" id="B0N-UR-tXa"/>
+                            <constraint firstItem="6jK-lu-8Rx" firstAttribute="top" secondItem="qUf-DQ-lI9" secondAttribute="bottom" constant="100" id="B5u-vh-5by"/>
+                            <constraint firstItem="ibJ-Tm-ecK" firstAttribute="centerX" secondItem="O7Q-Iy-9Sr" secondAttribute="centerX" id="JTT-ps-OIR"/>
+                            <constraint firstItem="aeA-sn-K8Q" firstAttribute="centerX" secondItem="O7Q-Iy-9Sr" secondAttribute="centerX" id="UUA-Ce-4eQ"/>
+                            <constraint firstItem="qUf-DQ-lI9" firstAttribute="centerX" secondItem="O7Q-Iy-9Sr" secondAttribute="centerX" id="gnc-j3-cHT"/>
+                            <constraint firstItem="ibJ-Tm-ecK" firstAttribute="top" secondItem="Q4z-8q-CWA" secondAttribute="top" constant="50" id="iVC-Fn-ULC"/>
+                            <constraint firstItem="O7Q-Iy-9Sr" firstAttribute="trailing" secondItem="aeA-sn-K8Q" secondAttribute="trailing" id="kfA-Vo-14j"/>
+                            <constraint firstItem="O7Q-Iy-9Sr" firstAttribute="trailing" secondItem="qUf-DQ-lI9" secondAttribute="trailing" constant="8" id="r3P-h4-taU"/>
+                            <constraint firstItem="qUf-DQ-lI9" firstAttribute="top" secondItem="aeA-sn-K8Q" secondAttribute="bottom" constant="20" id="vuS-b6-sTL"/>
+                            <constraint firstItem="lpj-ex-g8M" firstAttribute="bottom" secondItem="O7Q-Iy-9Sr" secondAttribute="bottom" id="xtr-oz-AmE"/>
+                            <constraint firstItem="lpj-ex-g8M" firstAttribute="centerX" secondItem="O7Q-Iy-9Sr" secondAttribute="centerX" id="yDt-ZM-ZyA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O7Q-Iy-9Sr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XuU-hD-blk"/>
+                    <connections>
+                        <outlet property="joinNowButton" destination="6jK-lu-8Rx" id="5ih-tY-6P1"/>
+                        <outlet property="loginButton" destination="xZl-S7-mn1" id="80c-sd-xQp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMb-JH-BCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="79.064039408867004"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="4A5-a4-IYK">
+            <objects>
+                <viewController id="hNo-Tw-NaG" customClass="LoginViewController" customModule="Anywhere_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bo0-pX-sos">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7gc-sG-FtB">
+                                <rect key="frame" x="105.66666666666669" y="50.000000000000007" width="164" height="76.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BH-Ty-ArC">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="38.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wS-Hc-bgi">
+                                        <rect key="frame" x="23.333333333333336" y="38.333333333333329" width="117.33333333333331" height="38.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login by providing the information below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd1-bY-oXQ">
+                                <rect key="frame" x="8" y="166.66666666666666" width="359" height="45"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zlX-Cx-43p">
+                                <rect key="frame" x="16" y="251.66666666666669" width="343" height="145.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Jpv-TG-kQb">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="69.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4v-tK-vw2">
+                                                <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6W-2h-Yh2">
+                                                <rect key="frame" x="0.0" y="25.333333333333343" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="IPA-sb-dwS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="u6W-2h-Yh2" secondAttribute="trailing" id="Nbo-nm-NXg"/>
+                                            <constraint firstItem="u6W-2h-Yh2" firstAttribute="leading" secondItem="Jpv-TG-kQb" secondAttribute="leading" id="ZGT-xy-i6w"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gcw-sp-x2B">
+                                        <rect key="frame" x="0.0" y="77.333333333333343" width="343" height="68.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHm-vB-pz8">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDk-pB-DGC">
+                                                <rect key="frame" x="0.0" y="24.333333333333314" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="GOk-Jj-YIY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="TDk-pB-DGC" secondAttribute="trailing" id="MAD-Dz-bYB"/>
+                                            <constraint firstItem="TDk-pB-DGC" firstAttribute="leading" secondItem="Gcw-sp-x2B" secondAttribute="leading" id="Z4X-hQ-BLV"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Gcw-sp-x2B" secondAttribute="trailing" id="4DE-Lb-i6d"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jpv-TG-kQb" secondAttribute="trailing" id="GtA-xU-1TV"/>
+                                    <constraint firstItem="Gcw-sp-x2B" firstAttribute="leading" secondItem="zlX-Cx-43p" secondAttribute="leading" id="fBT-5U-Ctg"/>
+                                    <constraint firstItem="Jpv-TG-kQb" firstAttribute="leading" secondItem="zlX-Cx-43p" secondAttribute="leading" id="gAa-hU-6yy"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ola-zs-viI">
+                                <rect key="frame" x="15.999999999999993" y="413.33333333333331" width="101.33333333333331" height="16"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGl-AD-rk5">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                        <color key="backgroundColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="2cF-ld-ZQf"/>
+                                            <constraint firstAttribute="width" constant="16" id="Cpe-js-aRN"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showPasswordPressed:" destination="hNo-Tw-NaG" eventType="touchUpInside" id="0j6-do-upz"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8s-Lm-A6Y">
+                                        <rect key="frame" x="24" y="0.0" width="77.333333333333329" height="16"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="11"/>
+                                        <color key="textColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUO-P1-SGE">
+                                <rect key="frame" x="106" y="549.33333333333337" width="163" height="44"/>
+                                <color key="backgroundColor" red="0.82651406530000004" green="0.2419953346" blue="0.3365478516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Cdf-Hn-Cev"/>
+                                    <constraint firstAttribute="width" constant="163" id="KDh-y8-uYM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                <color key="tintColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ola-zs-viI" firstAttribute="top" secondItem="zlX-Cx-43p" secondAttribute="bottom" constant="16" id="3hd-Z3-aH5"/>
+                            <constraint firstItem="rUO-P1-SGE" firstAttribute="top" secondItem="Ola-zs-viI" secondAttribute="bottom" constant="120" id="6fR-ly-2JR"/>
+                            <constraint firstItem="qd1-bY-oXQ" firstAttribute="leading" secondItem="3xG-Tj-4Wd" secondAttribute="leading" constant="8" id="BHN-hr-Imd"/>
+                            <constraint firstItem="qd1-bY-oXQ" firstAttribute="top" secondItem="7gc-sG-FtB" secondAttribute="bottom" constant="40" id="PlF-S8-Tf4"/>
+                            <constraint firstItem="rUO-P1-SGE" firstAttribute="centerX" secondItem="3xG-Tj-4Wd" secondAttribute="centerX" id="Teu-eZ-JRs"/>
+                            <constraint firstItem="7gc-sG-FtB" firstAttribute="top" secondItem="bo0-pX-sos" secondAttribute="top" constant="50" id="YMP-1Y-TPN"/>
+                            <constraint firstItem="Ola-zs-viI" firstAttribute="leading" secondItem="3xG-Tj-4Wd" secondAttribute="leading" constant="16" id="fNj-az-BQF"/>
+                            <constraint firstItem="3xG-Tj-4Wd" firstAttribute="trailing" secondItem="qd1-bY-oXQ" secondAttribute="trailing" constant="8" id="gwg-hQ-NWh"/>
+                            <constraint firstItem="qd1-bY-oXQ" firstAttribute="centerX" secondItem="3xG-Tj-4Wd" secondAttribute="centerX" id="meQ-Vs-bee"/>
+                            <constraint firstItem="zlX-Cx-43p" firstAttribute="top" secondItem="qd1-bY-oXQ" secondAttribute="bottom" constant="40" id="oFt-Y9-93E"/>
+                            <constraint firstItem="3xG-Tj-4Wd" firstAttribute="trailing" secondItem="zlX-Cx-43p" secondAttribute="trailing" constant="16" id="tQi-AX-ZzS"/>
+                            <constraint firstItem="zlX-Cx-43p" firstAttribute="leading" secondItem="3xG-Tj-4Wd" secondAttribute="leading" constant="16" id="uu3-Km-k22"/>
+                            <constraint firstItem="7gc-sG-FtB" firstAttribute="centerX" secondItem="3xG-Tj-4Wd" secondAttribute="centerX" id="xrZ-I8-FOV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3xG-Tj-4Wd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aIp-dS-y3R"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="u6W-2h-Yh2" id="C7e-aL-6zy"/>
+                        <outlet property="loginButton" destination="rUO-P1-SGE" id="qmg-vb-xEA"/>
+                        <outlet property="passwordTextField" destination="TDk-pB-DGC" id="5EZ-2t-3yv"/>
+                        <outlet property="showPasswordButton" destination="rGl-AD-rk5" id="Bsr-d7-7mj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDt-Tc-RQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="785"/>
+        </scene>
+        <!--Account Selection View Controller-->
+        <scene sceneID="uXj-SN-0zG">
+            <objects>
+                <viewController id="iVT-dM-Vsj" customClass="AccountSelectionViewController" customModule="Anywhere_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Yo-Mf-hqn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose if you want to join as a Client or an Instructor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bue-Nb-0Zf">
+                                <rect key="frame" x="30" y="146.66666666666666" width="315" height="45"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9Js-RK-dWY">
+                                <rect key="frame" x="16.666666666666657" y="251.66666666666663" width="342" height="197"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lut-VG-OdP">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="197"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9j-aZ-cZl">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="26"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="23"/>
+                                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5C-aM-7Pe">
+                                                <rect key="frame" x="0.0" y="34.000000000000028" width="163" height="163"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="163" id="RHI-Zz-GiZ"/>
+                                                    <constraint firstAttribute="width" constant="163" id="vvF-D9-XZX"/>
+                                                </constraints>
+                                                <state key="normal" image="ClientIconImage"/>
+                                                <connections>
+                                                    <segue destination="1lT-uP-QL4" kind="show" identifier="clientSelectedShowSegue" id="dHv-ev-Lol"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vJK-fI-Rc0">
+                                        <rect key="frame" x="179" y="0.0" width="163" height="197"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCu-wi-wyw">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="26"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="23"/>
+                                                <color key="textColor" red="0.82651406530000004" green="0.2419953346" blue="0.3365478516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9g-y0-qLP">
+                                                <rect key="frame" x="0.0" y="34.000000000000028" width="163" height="163"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="163" id="0By-f7-R0U"/>
+                                                    <constraint firstAttribute="height" constant="163" id="6Z8-is-SB5"/>
+                                                </constraints>
+                                                <state key="normal" image="InstructorIconImage"/>
+                                                <connections>
+                                                    <segue destination="1lT-uP-QL4" kind="show" identifier="instructorSelectedShowSegue" id="l1X-JE-FSi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hwy-Vo-POE">
+                                <rect key="frame" x="105.66666666666669" y="50.000000000000007" width="164" height="76.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEp-uZ-iyJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="38.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kB-h9-5BM">
+                                        <rect key="frame" x="23.333333333333336" y="38.333333333333329" width="117.33333333333331" height="38.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Js-RK-dWY" firstAttribute="centerX" secondItem="8c2-19-3di" secondAttribute="centerX" id="1id-ax-dBm"/>
+                            <constraint firstItem="Hwy-Vo-POE" firstAttribute="top" secondItem="3Yo-Mf-hqn" secondAttribute="top" constant="50" id="B1q-HJ-N1B"/>
+                            <constraint firstItem="9Js-RK-dWY" firstAttribute="top" secondItem="bue-Nb-0Zf" secondAttribute="bottom" constant="60" id="CnO-KW-5tf"/>
+                            <constraint firstItem="Hwy-Vo-POE" firstAttribute="centerX" secondItem="8c2-19-3di" secondAttribute="centerX" id="E3N-NX-9Nt"/>
+                            <constraint firstItem="bue-Nb-0Zf" firstAttribute="centerX" secondItem="8c2-19-3di" secondAttribute="centerX" id="gjc-WZ-Def"/>
+                            <constraint firstItem="8c2-19-3di" firstAttribute="trailing" secondItem="bue-Nb-0Zf" secondAttribute="trailing" constant="30" id="h9M-EF-MPf"/>
+                            <constraint firstItem="bue-Nb-0Zf" firstAttribute="leading" secondItem="8c2-19-3di" secondAttribute="leading" constant="30" id="kpG-fC-fcg"/>
+                            <constraint firstItem="bue-Nb-0Zf" firstAttribute="top" secondItem="Hwy-Vo-POE" secondAttribute="bottom" constant="20" id="qiH-CW-HPa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8c2-19-3di"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xfc-IP-EtJ"/>
+                    <connections>
+                        <outlet property="clientButton" destination="J5C-aM-7Pe" id="yLk-I1-vQp"/>
+                        <outlet property="clientStackView" destination="lut-VG-OdP" id="WQH-VB-Rpx"/>
+                        <outlet property="instructorButton" destination="I9g-y0-qLP" id="LXc-OQ-ue9"/>
+                        <outlet property="instructorStackView" destination="vJK-fI-Rc0" id="4tI-aX-JeD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lpa-1o-4oe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453.5999999999999" y="79.064039408867004"/>
+        </scene>
+        <!--Account Confirmation View Controller-->
+        <scene sceneID="1nY-8Z-baq">
+            <objects>
+                <viewController id="1lT-uP-QL4" customClass="AccountConfirmationViewController" customModule="Anywhere_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rT7-Nt-1yS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H3e-gP-9Vz">
+                                <rect key="frame" x="105.66666666666669" y="50.000000000000007" width="164" height="76.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU3-eT-cQD">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="38.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bn-A4-gpQ">
+                                        <rect key="frame" x="23.333333333333336" y="38.333333333333329" width="117.33333333333331" height="38.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose if you want to join as a Client or an Instructor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xah-2d-al7">
+                                <rect key="frame" x="30" y="146.66666666666666" width="315" height="45"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o01-Pg-qig">
+                                <rect key="frame" x="30" y="467.66666666666669" width="315" height="76.333333333333314"/>
+                                <string key="text">As a client, you will be able to search and  sign up for fitness classes based on location, skill level, and preferred workout type.</string>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D3o-p2-FdH">
+                                <rect key="frame" x="106" y="251.66666666666663" width="163" height="196"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEH-m9-bZB">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="26"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="23"/>
+                                        <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sgs-J1-PEg">
+                                        <rect key="frame" x="0.0" y="34.000000000000028" width="163" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sgs-J1-PEg" secondAttribute="height" multiplier="1:1" constant="1" id="bH0-7O-IZe"/>
+                                            <constraint firstAttribute="width" constant="163" id="cOo-Rw-BxM"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhE-OF-jW7">
+                                <rect key="frame" x="106" y="604" width="163" height="44"/>
+                                <color key="backgroundColor" red="0.82651406530000004" green="0.2419953346" blue="0.3365478516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Ms-bH-jQF"/>
+                                    <constraint firstAttribute="width" constant="163" id="5wc-Uc-QeI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                <color key="tintColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wNB-Xs-IMf" kind="show" identifier="signUpShowSegue" id="gXB-br-W1d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="H3e-gP-9Vz" firstAttribute="top" secondItem="rT7-Nt-1yS" secondAttribute="top" constant="50" id="A5y-m8-PUA"/>
+                            <constraint firstItem="o01-Pg-qig" firstAttribute="top" secondItem="D3o-p2-FdH" secondAttribute="bottom" constant="20" id="MvT-27-kHt"/>
+                            <constraint firstItem="Xah-2d-al7" firstAttribute="leading" secondItem="rT7-Nt-1yS" secondAttribute="leading" constant="30" id="Myu-vD-6S0"/>
+                            <constraint firstItem="hm3-7z-Iq5" firstAttribute="trailing" secondItem="o01-Pg-qig" secondAttribute="trailing" constant="30" id="QY8-AQ-111"/>
+                            <constraint firstItem="JhE-OF-jW7" firstAttribute="top" secondItem="o01-Pg-qig" secondAttribute="bottom" constant="60" id="R4e-zS-uSl"/>
+                            <constraint firstItem="D3o-p2-FdH" firstAttribute="centerX" secondItem="hm3-7z-Iq5" secondAttribute="centerX" id="S9a-J9-WDC"/>
+                            <constraint firstItem="D3o-p2-FdH" firstAttribute="top" secondItem="Xah-2d-al7" secondAttribute="bottom" constant="60" id="a0d-1K-MaV"/>
+                            <constraint firstItem="H3e-gP-9Vz" firstAttribute="centerX" secondItem="hm3-7z-Iq5" secondAttribute="centerX" id="c3P-q5-dba"/>
+                            <constraint firstItem="Xah-2d-al7" firstAttribute="top" secondItem="H3e-gP-9Vz" secondAttribute="bottom" constant="20" id="chv-hg-ByZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Xah-2d-al7" secondAttribute="trailing" constant="30" id="cr7-QF-mWD"/>
+                            <constraint firstItem="JhE-OF-jW7" firstAttribute="centerX" secondItem="hm3-7z-Iq5" secondAttribute="centerX" id="gBd-tk-yxX"/>
+                            <constraint firstItem="o01-Pg-qig" firstAttribute="leading" secondItem="hm3-7z-Iq5" secondAttribute="leading" constant="30" id="pIP-6z-1Y1"/>
+                            <constraint firstItem="Xah-2d-al7" firstAttribute="centerX" secondItem="hm3-7z-Iq5" secondAttribute="centerX" id="wqE-vL-aVl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hm3-7z-Iq5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8sh-hq-uak"/>
+                    <connections>
+                        <outlet property="accountDescriptionLabel" destination="o01-Pg-qig" id="bVk-yw-lRl"/>
+                        <outlet property="accountImageView" destination="sgs-J1-PEg" id="cBZ-Ru-7fM"/>
+                        <outlet property="accountTypeLabel" destination="NEH-m9-bZB" id="D2g-ny-Han"/>
+                        <outlet property="continueButton" destination="JhE-OF-jW7" id="qhf-p9-U4D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtj-6g-mUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2236" y="79"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="XBp-xK-gis">
+            <objects>
+                <viewController id="wNB-Xs-IMf" customClass="SignUpViewController" customModule="Anywhere_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJ9-nd-1De">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iTT-oN-6Y6">
+                                <rect key="frame" x="105.66666666666669" y="50.000000000000007" width="164" height="76.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anywhere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZh-g5-Q2F">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="38.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C29-pz-12U">
+                                        <rect key="frame" x="23.333333333333336" y="38.333333333333329" width="117.33333333333331" height="38.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="34"/>
+                                        <color key="textColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose if you want to join as a Client or an Instructor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRz-v1-d0m">
+                                <rect key="frame" x="30" y="146.66666666666666" width="315" height="45"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5zJ-pM-9ym">
+                                <rect key="frame" x="16" y="221.66666666666666" width="343" height="300.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Hin-4V-rV2">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="69.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnJ-Io-f2h">
+                                                <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lSw-GT-MbX">
+                                                <rect key="frame" x="0.0" y="25.333333333333343" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="ymg-7O-MQG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="lSw-GT-MbX" secondAttribute="trailing" id="73M-fl-1UI"/>
+                                            <constraint firstItem="lSw-GT-MbX" firstAttribute="leading" secondItem="Hin-4V-rV2" secondAttribute="leading" id="DFr-GI-nRZ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="edi-nL-XQ9">
+                                        <rect key="frame" x="0.0" y="77.333333333333343" width="343" height="68.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NW-nZ-dSF">
+                                                <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PkA-PY-9WT">
+                                                <rect key="frame" x="0.0" y="24.333333333333314" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="qk7-Xb-sFu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="PkA-PY-9WT" firstAttribute="leading" secondItem="edi-nL-XQ9" secondAttribute="leading" id="53u-rQ-eTe"/>
+                                            <constraint firstAttribute="trailing" secondItem="PkA-PY-9WT" secondAttribute="trailing" id="6OV-Wy-Hu3"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jGL-Fh-9xM">
+                                        <rect key="frame" x="0.0" y="153.66666666666666" width="343" height="69.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OL1-At-khd">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTa-GO-Sgp">
+                                                <rect key="frame" x="0.0" y="25.333333333333371" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="IbE-ex-Bt5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pTa-GO-Sgp" firstAttribute="leading" secondItem="jGL-Fh-9xM" secondAttribute="leading" id="4VY-fW-eXa"/>
+                                            <constraint firstAttribute="trailing" secondItem="pTa-GO-Sgp" secondAttribute="trailing" id="rBd-tZ-JtJ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Zoh-ao-skD">
+                                        <rect key="frame" x="0.0" y="231.00000000000003" width="343" height="69.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructor Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZn-o3-ffe">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bzm-GF-Cqp">
+                                                <rect key="frame" x="0.0" y="25.333333333333314" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="LbK-yK-LPx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Bzm-GF-Cqp" secondAttribute="trailing" id="3rq-Ze-zqi"/>
+                                            <constraint firstItem="Bzm-GF-Cqp" firstAttribute="leading" secondItem="Zoh-ao-skD" secondAttribute="leading" id="ndk-01-a9K"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hin-4V-rV2" firstAttribute="leading" secondItem="5zJ-pM-9ym" secondAttribute="leading" id="17b-Zl-sJb"/>
+                                    <constraint firstItem="jGL-Fh-9xM" firstAttribute="leading" secondItem="5zJ-pM-9ym" secondAttribute="leading" id="Sc3-I2-MiJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="edi-nL-XQ9" secondAttribute="trailing" id="UXb-RC-9v5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zoh-ao-skD" secondAttribute="trailing" id="UaF-bd-7FC"/>
+                                    <constraint firstAttribute="trailing" secondItem="jGL-Fh-9xM" secondAttribute="trailing" id="Wl9-4R-7Uy"/>
+                                    <constraint firstItem="edi-nL-XQ9" firstAttribute="leading" secondItem="5zJ-pM-9ym" secondAttribute="leading" id="cIc-sd-O6n"/>
+                                    <constraint firstItem="Zoh-ao-skD" firstAttribute="leading" secondItem="5zJ-pM-9ym" secondAttribute="leading" id="jqg-bF-nn1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hin-4V-rV2" secondAttribute="trailing" id="kkO-tq-kHP"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rO0-t9-Gi3">
+                                <rect key="frame" x="15.999999999999993" y="538" width="101.33333333333331" height="16"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzh-3W-Nw8">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                        <color key="backgroundColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="qKo-mz-ZrB"/>
+                                            <constraint firstAttribute="width" constant="16" id="zgb-b7-2J3"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showPasswordPressed:" destination="wNB-Xs-IMf" eventType="touchUpInside" id="pPq-yV-IzO"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAE-Df-ljR">
+                                        <rect key="frame" x="24" y="0.0" width="77.333333333333329" height="16"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="11"/>
+                                        <color key="textColor" red="1" green="0.99998790029999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCK-rk-cmf">
+                                <rect key="frame" x="106" y="614" width="163" height="44"/>
+                                <color key="backgroundColor" red="0.82651406530000004" green="0.2419953346" blue="0.3365478516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="FcO-YH-WiP"/>
+                                    <constraint firstAttribute="height" constant="44" id="rGT-wR-5jI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                <color key="tintColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign Up!">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rO0-t9-Gi3" firstAttribute="top" secondItem="5zJ-pM-9ym" secondAttribute="bottom" constant="16" id="0Q5-v7-uH8"/>
+                            <constraint firstItem="5zJ-pM-9ym" firstAttribute="leading" secondItem="y3x-gv-JoW" secondAttribute="leading" constant="16" id="2Im-tq-B09"/>
+                            <constraint firstItem="5zJ-pM-9ym" firstAttribute="centerX" secondItem="y3x-gv-JoW" secondAttribute="centerX" id="3za-Np-qcG"/>
+                            <constraint firstItem="lRz-v1-d0m" firstAttribute="leading" secondItem="y3x-gv-JoW" secondAttribute="leading" constant="30" id="DE6-Ba-ZSe"/>
+                            <constraint firstItem="iTT-oN-6Y6" firstAttribute="centerX" secondItem="y3x-gv-JoW" secondAttribute="centerX" id="E3n-jg-dXx"/>
+                            <constraint firstItem="lRz-v1-d0m" firstAttribute="centerX" secondItem="y3x-gv-JoW" secondAttribute="centerX" id="IRt-Zu-BU5"/>
+                            <constraint firstItem="5zJ-pM-9ym" firstAttribute="top" secondItem="lRz-v1-d0m" secondAttribute="bottom" constant="30" id="Vae-Xw-IIf"/>
+                            <constraint firstItem="iTT-oN-6Y6" firstAttribute="top" secondItem="eJ9-nd-1De" secondAttribute="top" constant="50" id="YUt-6d-jA7"/>
+                            <constraint firstItem="bCK-rk-cmf" firstAttribute="centerX" secondItem="y3x-gv-JoW" secondAttribute="centerX" id="jaQ-ZG-fp6"/>
+                            <constraint firstItem="bCK-rk-cmf" firstAttribute="top" secondItem="rO0-t9-Gi3" secondAttribute="bottom" constant="60" id="mY8-bg-CeS"/>
+                            <constraint firstItem="rO0-t9-Gi3" firstAttribute="leading" secondItem="y3x-gv-JoW" secondAttribute="leading" constant="16" id="mxK-qp-JMQ"/>
+                            <constraint firstItem="y3x-gv-JoW" firstAttribute="trailing" secondItem="5zJ-pM-9ym" secondAttribute="trailing" constant="16" id="rzm-5l-Bo3"/>
+                            <constraint firstItem="y3x-gv-JoW" firstAttribute="trailing" secondItem="lRz-v1-d0m" secondAttribute="trailing" constant="30" id="wUD-FS-thA"/>
+                            <constraint firstItem="lRz-v1-d0m" firstAttribute="top" secondItem="iTT-oN-6Y6" secondAttribute="bottom" constant="20" id="xhA-8X-f9h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="y3x-gv-JoW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gym-eB-fTb"/>
+                    <connections>
+                        <outlet property="authCodeLabel" destination="AZn-o3-ffe" id="RVn-Ns-0vW"/>
+                        <outlet property="authCodeTextField" destination="Bzm-GF-Cqp" id="dUu-h8-wJA"/>
+                        <outlet property="emailTextField" destination="PkA-PY-9WT" id="2Xb-ZV-cX5"/>
+                        <outlet property="nameTextField" destination="lSw-GT-MbX" id="Rf9-sH-uyQ"/>
+                        <outlet property="passwordTextField" destination="pTa-GO-Sgp" id="L1q-fy-qjN"/>
+                        <outlet property="showPasswordButton" destination="vzh-3W-Nw8" id="CPG-rC-r59"/>
+                        <outlet property="signUpButton" destination="bCK-rk-cmf" id="5Wf-zL-w9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cO-yJ-Oig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2997.5999999999999" y="77.58620689655173"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KnV-dy-crz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pii-oa-RaX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P1n-wv-gtY">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="taz-ci-Hjb" kind="relationship" relationship="rootViewController" id="Uud-eW-QxW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OzG-I0-vfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-282.39999999999998" y="79.064039408867004"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ClientIconImage" width="900" height="900"/>
+        <image name="InstructorIconImage" width="200" height="300"/>
+        <image name="LandingPageImage" width="294" height="171"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="l1X-JE-FSi"/>
+    </inferredMetricsTieBreakers>
+</document>

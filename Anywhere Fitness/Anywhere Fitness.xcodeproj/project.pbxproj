@@ -9,21 +9,57 @@
 /* Begin PBXBuildFile section */
 		A446C34C2406378E009AFC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C34B2406378E009AFC57 /* AppDelegate.swift */; };
 		A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C34D2406378E009AFC57 /* SceneDelegate.swift */; };
-		A446C3502406378E009AFC57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C34F2406378E009AFC57 /* ViewController.swift */; };
-		A446C3532406378E009AFC57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A446C3512406378E009AFC57 /* Main.storyboard */; };
 		A446C35524063791009AFC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A446C35424063791009AFC57 /* Assets.xcassets */; };
 		A446C35824063791009AFC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A446C35624063791009AFC57 /* LaunchScreen.storyboard */; };
+		A446C36524063844009AFC57 /* LoginSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A446C36424063844009AFC57 /* LoginSignup.storyboard */; };
+		A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C367240638F6009AFC57 /* LandingPageViewController.swift */; };
+		A462FF93240732C000465605 /* AccountConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462FF92240732C000465605 /* AccountConfirmationViewController.swift */; };
+		A473EEA5240728D60003B86A /* ThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A473EEA4240728D60003B86A /* ThemeController.swift */; };
+		A4820FB524063AB80045D379 /* UbuntuMono-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FA824063AB80045D379 /* UbuntuMono-BI.ttf */; };
+		A4820FB624063AB80045D379 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FA924063AB80045D379 /* Ubuntu-B.ttf */; };
+		A4820FB724063AB80045D379 /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FAA24063AB80045D379 /* Ubuntu-R.ttf */; };
+		A4820FB824063AB80045D379 /* UbuntuMono-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FAB24063AB80045D379 /* UbuntuMono-B.ttf */; };
+		A4820FB924063AB80045D379 /* Ubuntu-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FAC24063AB80045D379 /* Ubuntu-RI.ttf */; };
+		A4820FBA24063AB80045D379 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FAD24063AB80045D379 /* Ubuntu-BI.ttf */; };
+		A4820FBB24063AB80045D379 /* Ubuntu-L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FAE24063AB80045D379 /* Ubuntu-L.ttf */; };
+		A4820FBC24063AB80045D379 /* UbuntuMono-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FAF24063AB80045D379 /* UbuntuMono-R.ttf */; };
+		A4820FBD24063AB80045D379 /* Ubuntu-LI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FB024063AB80045D379 /* Ubuntu-LI.ttf */; };
+		A4820FBE24063AB80045D379 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FB124063AB80045D379 /* Ubuntu-C.ttf */; };
+		A4820FBF24063AB80045D379 /* UbuntuMono-RI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FB224063AB80045D379 /* UbuntuMono-RI.ttf */; };
+		A4820FC024063AB80045D379 /* Ubuntu-M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FB324063AB80045D379 /* Ubuntu-M.ttf */; };
+		A4820FC124063AB80045D379 /* Ubuntu-MI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FB424063AB80045D379 /* Ubuntu-MI.ttf */; };
+		A4820FC52406F1CE0045D379 /* AccountSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4820FC42406F1CE0045D379 /* AccountSelectionViewController.swift */; };
+		A4EECD032407399A00824B91 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EECD022407399A00824B91 /* SignUpViewController.swift */; };
+		A4EECD052407410700824B91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EECD042407410700824B91 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A446C3482406378E009AFC57 /* Anywhere Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anywhere Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A446C34B2406378E009AFC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A446C34D2406378E009AFC57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A446C34F2406378E009AFC57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A446C3522406378E009AFC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A446C35424063791009AFC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A446C35724063791009AFC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A446C35924063791009AFC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A446C36424063844009AFC57 /* LoginSignup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSignup.storyboard; sourceTree = "<group>"; };
+		A446C367240638F6009AFC57 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		A462FF92240732C000465605 /* AccountConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountConfirmationViewController.swift; sourceTree = "<group>"; };
+		A473EEA4240728D60003B86A /* ThemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeController.swift; sourceTree = "<group>"; };
+		A4820FA824063AB80045D379 /* UbuntuMono-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-BI.ttf"; sourceTree = "<group>"; };
+		A4820FA924063AB80045D379 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
+		A4820FAA24063AB80045D379 /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		A4820FAB24063AB80045D379 /* UbuntuMono-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-B.ttf"; sourceTree = "<group>"; };
+		A4820FAC24063AB80045D379 /* Ubuntu-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-RI.ttf"; sourceTree = "<group>"; };
+		A4820FAD24063AB80045D379 /* Ubuntu-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BI.ttf"; sourceTree = "<group>"; };
+		A4820FAE24063AB80045D379 /* Ubuntu-L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-L.ttf"; sourceTree = "<group>"; };
+		A4820FAF24063AB80045D379 /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-R.ttf"; sourceTree = "<group>"; };
+		A4820FB024063AB80045D379 /* Ubuntu-LI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LI.ttf"; sourceTree = "<group>"; };
+		A4820FB124063AB80045D379 /* Ubuntu-C.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-C.ttf"; sourceTree = "<group>"; };
+		A4820FB224063AB80045D379 /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-RI.ttf"; sourceTree = "<group>"; };
+		A4820FB324063AB80045D379 /* Ubuntu-M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-M.ttf"; sourceTree = "<group>"; };
+		A4820FB424063AB80045D379 /* Ubuntu-MI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MI.ttf"; sourceTree = "<group>"; };
+		A4820FC42406F1CE0045D379 /* AccountSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSelectionViewController.swift; sourceTree = "<group>"; };
+		A4EECD022407399A00824B91 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A4EECD042407410700824B91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +92,81 @@
 		A446C34A2406378E009AFC57 /* Anywhere Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				A473EEA3240728CA0003B86A /* Model */,
 				A446C34B2406378E009AFC57 /* AppDelegate.swift */,
 				A446C34D2406378E009AFC57 /* SceneDelegate.swift */,
-				A446C34F2406378E009AFC57 /* ViewController.swift */,
-				A446C3512406378E009AFC57 /* Main.storyboard */,
+				A446C36124063817009AFC57 /* View Controllers */,
+				A446C3602406380E009AFC57 /* Storyboards */,
+				A4820FA724063A920045D379 /* Fonts */,
 				A446C35424063791009AFC57 /* Assets.xcassets */,
-				A446C35624063791009AFC57 /* LaunchScreen.storyboard */,
 				A446C35924063791009AFC57 /* Info.plist */,
 			);
 			path = "Anywhere Fitness";
+			sourceTree = "<group>";
+		};
+		A446C3602406380E009AFC57 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A446C35624063791009AFC57 /* LaunchScreen.storyboard */,
+				A446C36424063844009AFC57 /* LoginSignup.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A446C36124063817009AFC57 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A446C366240638DB009AFC57 /* LoginSignup View Controllers */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A446C366240638DB009AFC57 /* LoginSignup View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A446C367240638F6009AFC57 /* LandingPageViewController.swift */,
+				A4820FC42406F1CE0045D379 /* AccountSelectionViewController.swift */,
+				A462FF92240732C000465605 /* AccountConfirmationViewController.swift */,
+				A4EECD022407399A00824B91 /* SignUpViewController.swift */,
+				A4EECD042407410700824B91 /* LoginViewController.swift */,
+			);
+			path = "LoginSignup View Controllers";
+			sourceTree = "<group>";
+		};
+		A473EEA3240728CA0003B86A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A473EEA624072AED0003B86A /* Theme Controller */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A473EEA624072AED0003B86A /* Theme Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A473EEA4240728D60003B86A /* ThemeController.swift */,
+			);
+			path = "Theme Controller";
+			sourceTree = "<group>";
+		};
+		A4820FA724063A920045D379 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A4820FA924063AB80045D379 /* Ubuntu-B.ttf */,
+				A4820FAD24063AB80045D379 /* Ubuntu-BI.ttf */,
+				A4820FB124063AB80045D379 /* Ubuntu-C.ttf */,
+				A4820FAE24063AB80045D379 /* Ubuntu-L.ttf */,
+				A4820FB024063AB80045D379 /* Ubuntu-LI.ttf */,
+				A4820FB324063AB80045D379 /* Ubuntu-M.ttf */,
+				A4820FB424063AB80045D379 /* Ubuntu-MI.ttf */,
+				A4820FAA24063AB80045D379 /* Ubuntu-R.ttf */,
+				A4820FAC24063AB80045D379 /* Ubuntu-RI.ttf */,
+				A4820FAB24063AB80045D379 /* UbuntuMono-B.ttf */,
+				A4820FA824063AB80045D379 /* UbuntuMono-BI.ttf */,
+				A4820FAF24063AB80045D379 /* UbuntuMono-R.ttf */,
+				A4820FB224063AB80045D379 /* UbuntuMono-RI.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +227,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4820FB724063AB80045D379 /* Ubuntu-R.ttf in Resources */,
+				A4820FBC24063AB80045D379 /* UbuntuMono-R.ttf in Resources */,
 				A446C35824063791009AFC57 /* LaunchScreen.storyboard in Resources */,
+				A4820FB824063AB80045D379 /* UbuntuMono-B.ttf in Resources */,
+				A4820FB624063AB80045D379 /* Ubuntu-B.ttf in Resources */,
+				A4820FB924063AB80045D379 /* Ubuntu-RI.ttf in Resources */,
+				A4820FC024063AB80045D379 /* Ubuntu-M.ttf in Resources */,
+				A4820FBD24063AB80045D379 /* Ubuntu-LI.ttf in Resources */,
+				A4820FB524063AB80045D379 /* UbuntuMono-BI.ttf in Resources */,
+				A4820FBB24063AB80045D379 /* Ubuntu-L.ttf in Resources */,
+				A4820FBE24063AB80045D379 /* Ubuntu-C.ttf in Resources */,
+				A4820FBA24063AB80045D379 /* Ubuntu-BI.ttf in Resources */,
+				A446C36524063844009AFC57 /* LoginSignup.storyboard in Resources */,
 				A446C35524063791009AFC57 /* Assets.xcassets in Resources */,
-				A446C3532406378E009AFC57 /* Main.storyboard in Resources */,
+				A4820FBF24063AB80045D379 /* UbuntuMono-RI.ttf in Resources */,
+				A4820FC124063AB80045D379 /* Ubuntu-MI.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +253,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A446C3502406378E009AFC57 /* ViewController.swift in Sources */,
 				A446C34C2406378E009AFC57 /* AppDelegate.swift in Sources */,
+				A4EECD032407399A00824B91 /* SignUpViewController.swift in Sources */,
+				A4820FC52406F1CE0045D379 /* AccountSelectionViewController.swift in Sources */,
+				A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */,
+				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
+				A473EEA5240728D60003B86A /* ThemeController.swift in Sources */,
 				A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */,
+				A462FF93240732C000465605 /* AccountConfirmationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A446C3512406378E009AFC57 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A446C3522406378E009AFC57 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A446C35624063791009AFC57 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eoinlavery.Anywhere-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eoinlavery.Anywhere-Fitness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
