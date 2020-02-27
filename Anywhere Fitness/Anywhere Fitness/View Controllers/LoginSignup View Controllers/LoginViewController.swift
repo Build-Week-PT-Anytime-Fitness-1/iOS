@@ -49,6 +49,11 @@ class LoginViewController: UIViewController {
         loginButton.layer.cornerRadius = loginButton.frame.height / 2
     }
     
+    private func configureDelegates() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+    
     //MARK: - IBActions
     @IBAction func showPasswordPressed(_ sender: Any) {
         if showPassword == false {
@@ -58,6 +63,14 @@ class LoginViewController: UIViewController {
             showPassword = false
             showPasswordButton.layer.backgroundColor = UIColor.clear.cgColor
         }
+    }
+    
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
     
 }
