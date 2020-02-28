@@ -15,6 +15,9 @@
 		A43F18122408659F0087D1D8 /* InstructorHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43F18112408659F0087D1D8 /* InstructorHomePage.storyboard */; };
 		A43F1816240867180087D1D8 /* ClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F1814240867180087D1D8 /* ClassCollectionViewCell.swift */; };
 		A43F1817240867180087D1D8 /* ClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43F1815240867180087D1D8 /* ClassCollectionViewCell.xib */; };
+		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
+		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
+		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
 		A446C34C2406378E009AFC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C34B2406378E009AFC57 /* AppDelegate.swift */; };
 		A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C34D2406378E009AFC57 /* SceneDelegate.swift */; };
 		A446C35524063791009AFC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A446C35424063791009AFC57 /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		A43F18112408659F0087D1D8 /* InstructorHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstructorHomePage.storyboard; sourceTree = "<group>"; };
 		A43F1814240867180087D1D8 /* ClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCollectionViewCell.swift; sourceTree = "<group>"; };
 		A43F1815240867180087D1D8 /* ClassCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCollectionViewCell.xib; sourceTree = "<group>"; };
+		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
+		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
 		A446C3482406378E009AFC57 /* Anywhere Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anywhere Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A446C34B2406378E009AFC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A446C34D2406378E009AFC57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,7 +206,10 @@
 		A473EEA3240728CA0003B86A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A2AACD4B240889CB00C25EEF /* Client.swift */,
+				A2AACD4D24088AE000C25EEF /* Instructor.swift */,
 				A473EEA624072AED0003B86A /* Theme Controller */,
+				A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,7 +341,10 @@
 				A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */,
 				A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */,
 				A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */,
+				A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */,
 				A462FF93240732C000465605 /* AccountConfirmationViewController.swift in Sources */,
+				A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */,
+				A2AACD4C240889CB00C25EEF /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3VD68AZYHZ;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "Anywhere Fitness/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,7 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3VD68AZYHZ;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "Anywhere Fitness/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
