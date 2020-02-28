@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
+		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
+		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
 		A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */; };
 		A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */; };
 		A43F18102408658F0087D1D8 /* ClientHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43F180F2408658F0087D1D8 /* ClientHomePage.storyboard */; };
@@ -40,6 +43,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
+		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
 		A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomePageViewController.swift; sourceTree = "<group>"; };
 		A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorHomePageViewController.swift; sourceTree = "<group>"; };
 		A43F180F2408658F0087D1D8 /* ClientHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClientHomePage.storyboard; sourceTree = "<group>"; };
@@ -178,7 +184,10 @@
 		A473EEA3240728CA0003B86A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A2AACD4B240889CB00C25EEF /* Client.swift */,
+				A2AACD4D24088AE000C25EEF /* Instructor.swift */,
 				A473EEA624072AED0003B86A /* Theme Controller */,
+				A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,9 +315,12 @@
 				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
 				A473EEA5240728D60003B86A /* ThemeController.swift in Sources */,
 				A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */,
+				A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */,
 				A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */,
 				A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */,
 				A462FF93240732C000465605 /* AccountConfirmationViewController.swift in Sources */,
+				A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */,
+				A2AACD4C240889CB00C25EEF /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3VD68AZYHZ;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "Anywhere Fitness/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3VD68AZYHZ;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "Anywhere Fitness/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
