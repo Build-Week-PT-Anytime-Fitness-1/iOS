@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD12408C04100186D8E /* ProfileViewController.swift */; };
+		A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD42408C08500186D8E /* SearchViewController.swift */; };
 		A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */; };
 		A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */; };
 		A43F18102408658F0087D1D8 /* ClientHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43F180F2408658F0087D1D8 /* ClientHomePage.storyboard */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A423CCD12408C04100186D8E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A423CCD42408C08500186D8E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomePageViewController.swift; sourceTree = "<group>"; };
 		A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorHomePageViewController.swift; sourceTree = "<group>"; };
 		A43F180F2408658F0087D1D8 /* ClientHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClientHomePage.storyboard; sourceTree = "<group>"; };
@@ -85,6 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A423CCD02408C01700186D8E /* Profile View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A423CCD12408C04100186D8E /* ProfileViewController.swift */,
+			);
+			path = "Profile View Controllers";
+			sourceTree = "<group>";
+		};
+		A423CCD32408C06300186D8E /* Search View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A423CCD42408C08500186D8E /* SearchViewController.swift */,
+			);
+			path = "Search View Controllers";
+			sourceTree = "<group>";
+		};
 		A43F180A240864E00087D1D8 /* HomePage View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +179,8 @@
 			children = (
 				A446C366240638DB009AFC57 /* LoginSignup View Controllers */,
 				A43F180A240864E00087D1D8 /* HomePage View Controllers */,
+				A423CCD02408C01700186D8E /* Profile View Controllers */,
+				A423CCD32408C06300186D8E /* Search View Controllers */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -304,7 +326,9 @@
 				A4820FC52406F1CE0045D379 /* AccountSelectionViewController.swift in Sources */,
 				A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */,
 				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
+				A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */,
 				A473EEA5240728D60003B86A /* ThemeController.swift in Sources */,
+				A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */,
 				A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */,
 				A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */,
 				A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */,
