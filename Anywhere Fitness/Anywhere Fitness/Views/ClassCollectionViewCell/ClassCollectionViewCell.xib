@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-M.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="ClassCollectionViewCell" customModule="Anywhere_Fitness" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="209" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="209" height="218"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRi-2f-7L3">
+                        <rect key="frame" x="0.0" y="0.0" width="209" height="218"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ClientIconImage" translatesAutoresizingMaskIntoConstraints="NO" id="vga-Zz-tYh">
+                                <rect key="frame" x="0.0" y="0.0" width="209" height="139"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="YS2-Vz-bXj"/>
+                                    <constraint firstAttribute="width" constant="209" id="sBW-9D-Xj0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yoga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oab-I7-hPk">
+                                <rect key="frame" x="0.0" y="141" width="209" height="17"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="15"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cincinnati" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyE-I4-Fa8">
+                                <rect key="frame" x="0.0" y="182" width="201" height="15"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cincy Yoga Club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyB-61-bUx">
+                                <rect key="frame" x="0.0" y="160" width="209" height="20"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="17"/>
+                                <color key="textColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Lw-Ec-KUD">
+                                <rect key="frame" x="0.0" y="199" width="201" height="15"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oab-I7-hPk" firstAttribute="centerX" secondItem="bRi-2f-7L3" secondAttribute="centerX" id="0Zp-t1-kIz"/>
+                            <constraint firstAttribute="trailing" secondItem="4Lw-Ec-KUD" secondAttribute="trailing" constant="8" id="0o7-5d-UfZ"/>
+                            <constraint firstItem="AyB-61-bUx" firstAttribute="leading" secondItem="bRi-2f-7L3" secondAttribute="leading" id="6W5-89-iGm"/>
+                            <constraint firstItem="4Lw-Ec-KUD" firstAttribute="top" secondItem="ZyE-I4-Fa8" secondAttribute="bottom" constant="2" id="7Fh-kN-TwL"/>
+                            <constraint firstItem="AyB-61-bUx" firstAttribute="centerX" secondItem="bRi-2f-7L3" secondAttribute="centerX" id="AhW-3a-s5c"/>
+                            <constraint firstItem="vga-Zz-tYh" firstAttribute="centerX" secondItem="bRi-2f-7L3" secondAttribute="centerX" id="IHw-oa-DkT"/>
+                            <constraint firstItem="vga-Zz-tYh" firstAttribute="top" secondItem="bRi-2f-7L3" secondAttribute="top" id="PCg-Om-k0U"/>
+                            <constraint firstItem="Oab-I7-hPk" firstAttribute="leading" secondItem="bRi-2f-7L3" secondAttribute="leading" id="PED-rg-lU2"/>
+                            <constraint firstAttribute="width" constant="209" id="Tog-k9-0MO"/>
+                            <constraint firstAttribute="height" constant="218" id="VH3-gz-IiM"/>
+                            <constraint firstItem="ZyE-I4-Fa8" firstAttribute="leading" secondItem="bRi-2f-7L3" secondAttribute="leading" id="d8G-R0-inR"/>
+                            <constraint firstItem="vga-Zz-tYh" firstAttribute="leading" secondItem="bRi-2f-7L3" secondAttribute="leading" id="eVb-k1-Ruy"/>
+                            <constraint firstAttribute="trailing" secondItem="ZyE-I4-Fa8" secondAttribute="trailing" constant="8" id="geH-Tx-Cdq"/>
+                            <constraint firstItem="AyB-61-bUx" firstAttribute="top" secondItem="Oab-I7-hPk" secondAttribute="bottom" constant="2" id="hxP-ab-aT7"/>
+                            <constraint firstAttribute="trailing" secondItem="vga-Zz-tYh" secondAttribute="trailing" id="oDD-tO-Dij"/>
+                            <constraint firstItem="ZyE-I4-Fa8" firstAttribute="top" secondItem="AyB-61-bUx" secondAttribute="bottom" constant="2" id="p9K-FV-72M"/>
+                            <constraint firstItem="Oab-I7-hPk" firstAttribute="top" secondItem="vga-Zz-tYh" secondAttribute="bottom" constant="2" id="z9c-PB-05U"/>
+                            <constraint firstItem="4Lw-Ec-KUD" firstAttribute="leading" secondItem="bRi-2f-7L3" secondAttribute="leading" id="zFU-dg-Wow"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bRi-2f-7L3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Bg-zX-AQn"/>
+                <constraint firstAttribute="bottom" secondItem="bRi-2f-7L3" secondAttribute="bottom" id="Qb5-ki-EWX"/>
+                <constraint firstAttribute="trailing" secondItem="bRi-2f-7L3" secondAttribute="trailing" id="S06-tZ-exU"/>
+                <constraint firstItem="bRi-2f-7L3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YKp-kM-GW4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="209" height="218"/>
+            <connections>
+                <outlet property="classCityLabel" destination="ZyE-I4-Fa8" id="tyD-M9-YlB"/>
+                <outlet property="classImageView" destination="vga-Zz-tYh" id="LGG-WC-agJ"/>
+                <outlet property="classNameLabel" destination="AyB-61-bUx" id="O5j-cW-TsP"/>
+                <outlet property="classRatingLabel" destination="4Lw-Ec-KUD" id="CMD-xg-Pkk"/>
+                <outlet property="classTypeLabel" destination="Oab-I7-hPk" id="Vdq-ya-fon"/>
+            </connections>
+            <point key="canvasLocation" x="252.89855072463769" y="208.92857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ClientIconImage" width="900" height="900"/>
+    </resources>
+</document>
