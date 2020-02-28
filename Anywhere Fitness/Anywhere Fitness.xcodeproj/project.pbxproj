@@ -10,12 +10,17 @@
 		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
 		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
 		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
+		A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD12408C04100186D8E /* ProfileViewController.swift */; };
+		A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD42408C08500186D8E /* SearchViewController.swift */; };
 		A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */; };
 		A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */; };
 		A43F18102408658F0087D1D8 /* ClientHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43F180F2408658F0087D1D8 /* ClientHomePage.storyboard */; };
 		A43F18122408659F0087D1D8 /* InstructorHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43F18112408659F0087D1D8 /* InstructorHomePage.storyboard */; };
 		A43F1816240867180087D1D8 /* ClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F1814240867180087D1D8 /* ClassCollectionViewCell.swift */; };
 		A43F1817240867180087D1D8 /* ClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43F1815240867180087D1D8 /* ClassCollectionViewCell.xib */; };
+		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
+		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
+		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
 		A446C34C2406378E009AFC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C34B2406378E009AFC57 /* AppDelegate.swift */; };
 		A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C34D2406378E009AFC57 /* SceneDelegate.swift */; };
 		A446C35524063791009AFC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A446C35424063791009AFC57 /* Assets.xcassets */; };
@@ -46,12 +51,17 @@
 		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
+		A423CCD12408C04100186D8E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A423CCD42408C08500186D8E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomePageViewController.swift; sourceTree = "<group>"; };
 		A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorHomePageViewController.swift; sourceTree = "<group>"; };
 		A43F180F2408658F0087D1D8 /* ClientHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClientHomePage.storyboard; sourceTree = "<group>"; };
 		A43F18112408659F0087D1D8 /* InstructorHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstructorHomePage.storyboard; sourceTree = "<group>"; };
 		A43F1814240867180087D1D8 /* ClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCollectionViewCell.swift; sourceTree = "<group>"; };
 		A43F1815240867180087D1D8 /* ClassCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCollectionViewCell.xib; sourceTree = "<group>"; };
+		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
+		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
 		A446C3482406378E009AFC57 /* Anywhere Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anywhere Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A446C34B2406378E009AFC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A446C34D2406378E009AFC57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +101,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A423CCD02408C01700186D8E /* Profile View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A423CCD12408C04100186D8E /* ProfileViewController.swift */,
+			);
+			path = "Profile View Controllers";
+			sourceTree = "<group>";
+		};
+		A423CCD32408C06300186D8E /* Search View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A423CCD42408C08500186D8E /* SearchViewController.swift */,
+			);
+			path = "Search View Controllers";
+			sourceTree = "<group>";
+		};
 		A43F180A240864E00087D1D8 /* HomePage View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +191,8 @@
 			children = (
 				A446C366240638DB009AFC57 /* LoginSignup View Controllers */,
 				A43F180A240864E00087D1D8 /* HomePage View Controllers */,
+				A423CCD02408C01700186D8E /* Profile View Controllers */,
+				A423CCD32408C06300186D8E /* Search View Controllers */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -313,11 +341,14 @@
 				A4820FC52406F1CE0045D379 /* AccountSelectionViewController.swift in Sources */,
 				A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */,
 				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
+				A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */,
 				A473EEA5240728D60003B86A /* ThemeController.swift in Sources */,
+				A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */,
 				A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */,
 				A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */,
 				A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */,
 				A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */,
+				A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */,
 				A462FF93240732C000465605 /* AccountConfirmationViewController.swift in Sources */,
 				A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */,
 				A2AACD4C240889CB00C25EEF /* Client.swift in Sources */,
