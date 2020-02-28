@@ -34,4 +34,33 @@ class ThemeController {
         }
     }
     
+    func adjustHomePageNavigationBar(for navigationBar: UINavigationBar) {
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.layer.backgroundColor = redButtonColor.cgColor
+        navigationBar.tintColor = redButtonColor
+        
+        if let items = navigationBar.items {
+            for item in items {
+                item.leftBarButtonItem?.tintColor = lightTextIconColor
+                item.rightBarButtonItem?.tintColor = lightTextIconColor
+            }
+        }
+        
+    }
+    
+    func adjustHomePageTabBar(for tabBar: UITabBar) {
+        tabBar.backgroundImage = UIImage()
+        tabBar.tintColor = lightTextIconColor
+        tabBar.barTintColor = darkGrayBackground
+    }
+    
+    func setStatusBar(view: UIView) -> UIView {
+        let statusBar =  UIView()
+        if let statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame {
+            statusBar.frame = statusBarFrame
+        }
+        statusBar.backgroundColor = redButtonColor
+        return statusBar
+    }
+    
 }

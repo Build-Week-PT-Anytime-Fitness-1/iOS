@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		99517AF3C45780450C0EE50F /* Pods_Anywhere_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638276D3E887479148D41BF8 /* Pods_Anywhere_Fitness.framework */; };
+		A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD12408C04100186D8E /* ProfileViewController.swift */; };
+		A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD42408C08500186D8E /* SearchViewController.swift */; };
+		A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */; };
+		A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */; };
+		A43F18102408658F0087D1D8 /* ClientHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43F180F2408658F0087D1D8 /* ClientHomePage.storyboard */; };
+		A43F18122408659F0087D1D8 /* InstructorHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43F18112408659F0087D1D8 /* InstructorHomePage.storyboard */; };
+		A43F1816240867180087D1D8 /* ClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F1814240867180087D1D8 /* ClassCollectionViewCell.swift */; };
+		A43F1817240867180087D1D8 /* ClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43F1815240867180087D1D8 /* ClassCollectionViewCell.xib */; };
 		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
 		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
 		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
@@ -43,6 +51,14 @@
 /* Begin PBXFileReference section */
 		385EB16AF72DB7095FACBA63 /* Pods-Anywhere Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere Fitness.release.xcconfig"; path = "Target Support Files/Pods-Anywhere Fitness/Pods-Anywhere Fitness.release.xcconfig"; sourceTree = "<group>"; };
 		638276D3E887479148D41BF8 /* Pods_Anywhere_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anywhere_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A423CCD12408C04100186D8E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A423CCD42408C08500186D8E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomePageViewController.swift; sourceTree = "<group>"; };
+		A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorHomePageViewController.swift; sourceTree = "<group>"; };
+		A43F180F2408658F0087D1D8 /* ClientHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClientHomePage.storyboard; sourceTree = "<group>"; };
+		A43F18112408659F0087D1D8 /* InstructorHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstructorHomePage.storyboard; sourceTree = "<group>"; };
+		A43F1814240867180087D1D8 /* ClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		A43F1815240867180087D1D8 /* ClassCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCollectionViewCell.xib; sourceTree = "<group>"; };
 		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
@@ -108,6 +124,48 @@
 			path = "Network Controllers";
 			sourceTree = "<group>";
 		};
+		A423CCD02408C01700186D8E /* Profile View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A423CCD12408C04100186D8E /* ProfileViewController.swift */,
+			);
+			path = "Profile View Controllers";
+			sourceTree = "<group>";
+		};
+		A423CCD32408C06300186D8E /* Search View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A423CCD42408C08500186D8E /* SearchViewController.swift */,
+			);
+			path = "Search View Controllers";
+			sourceTree = "<group>";
+		};
+		A43F180A240864E00087D1D8 /* HomePage View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */,
+				A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */,
+			);
+			path = "HomePage View Controllers";
+			sourceTree = "<group>";
+		};
+		A43F1813240866EB0087D1D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A43F18182408671E0087D1D8 /* ClassCollectionViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A43F18182408671E0087D1D8 /* ClassCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A43F1814240867180087D1D8 /* ClassCollectionViewCell.swift */,
+				A43F1815240867180087D1D8 /* ClassCollectionViewCell.xib */,
+			);
+			path = ClassCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		A446C33F2406378E009AFC57 = {
 			isa = PBXGroup;
 			children = (
@@ -129,10 +187,11 @@
 		A446C34A2406378E009AFC57 /* Anywhere Fitness */ = {
 			isa = PBXGroup;
 			children = (
-				A473EEA3240728CA0003B86A /* Model */,
 				A446C34B2406378E009AFC57 /* AppDelegate.swift */,
 				A446C34D2406378E009AFC57 /* SceneDelegate.swift */,
 				A2F0D9162408DD920039F361 /* Network Controllers */,
+				A43F1813240866EB0087D1D8 /* Views */,
+				A473EEA3240728CA0003B86A /* Model */,
 				A446C36124063817009AFC57 /* View Controllers */,
 				A446C3602406380E009AFC57 /* Storyboards */,
 				A4820FA724063A920045D379 /* Fonts */,
@@ -148,6 +207,8 @@
 			children = (
 				A446C35624063791009AFC57 /* LaunchScreen.storyboard */,
 				A446C36424063844009AFC57 /* LoginSignup.storyboard */,
+				A43F180F2408658F0087D1D8 /* ClientHomePage.storyboard */,
+				A43F18112408659F0087D1D8 /* InstructorHomePage.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -156,6 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				A446C366240638DB009AFC57 /* LoginSignup View Controllers */,
+				A43F180A240864E00087D1D8 /* HomePage View Controllers */,
+				A423CCD02408C01700186D8E /* Profile View Controllers */,
+				A423CCD32408C06300186D8E /* Search View Controllers */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -286,13 +350,16 @@
 				A4820FB624063AB80045D379 /* Ubuntu-B.ttf in Resources */,
 				A4820FB924063AB80045D379 /* Ubuntu-RI.ttf in Resources */,
 				A4820FC024063AB80045D379 /* Ubuntu-M.ttf in Resources */,
+				A43F18102408658F0087D1D8 /* ClientHomePage.storyboard in Resources */,
 				A4820FBD24063AB80045D379 /* Ubuntu-LI.ttf in Resources */,
 				A4820FB524063AB80045D379 /* UbuntuMono-BI.ttf in Resources */,
 				A4820FBB24063AB80045D379 /* Ubuntu-L.ttf in Resources */,
 				A4820FBE24063AB80045D379 /* Ubuntu-C.ttf in Resources */,
 				A4820FBA24063AB80045D379 /* Ubuntu-BI.ttf in Resources */,
 				A2AACD602408CAB700C25EEF /* GoogleService-Info.plist in Resources */,
+				A43F18122408659F0087D1D8 /* InstructorHomePage.storyboard in Resources */,
 				A446C36524063844009AFC57 /* LoginSignup.storyboard in Resources */,
+				A43F1817240867180087D1D8 /* ClassCollectionViewCell.xib in Resources */,
 				A446C35524063791009AFC57 /* Assets.xcassets in Resources */,
 				A4820FBF24063AB80045D379 /* UbuntuMono-RI.ttf in Resources */,
 				A4820FC124063AB80045D379 /* Ubuntu-MI.ttf in Resources */,
@@ -348,13 +415,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43F1816240867180087D1D8 /* ClassCollectionViewCell.swift in Sources */,
 				A446C34C2406378E009AFC57 /* AppDelegate.swift in Sources */,
 				A4EECD032407399A00824B91 /* SignUpViewController.swift in Sources */,
 				A4820FC52406F1CE0045D379 /* AccountSelectionViewController.swift in Sources */,
 				A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */,
 				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
+				A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */,
 				A473EEA5240728D60003B86A /* ThemeController.swift in Sources */,
+				A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */,
 				A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */,
+				A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */,
+				A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */,
 				A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */,
 				A2F0D9152408DD8E0039F361 /* APIController.swift in Sources */,
 				A462FF93240732C000465605 /* AccountConfirmationViewController.swift in Sources */,
