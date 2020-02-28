@@ -14,15 +14,25 @@
  * limitations under the License.
  */
 
-#import "FIRDeleteAccountResponse.h"
+#import "FIRGitHubAuthProvider.h"
+
+#import "FIRGitHubAuthCredential.h"
+#import "FIRAuthExceptionUtils.h"
+
+// FIRGitHubAuthProviderID is defined in FIRAuthProvider.m.
 
 NS_ASSUME_NONNULL_BEGIN
 
-@implementation FIRDeleteAccountResponse
+@implementation FIRGitHubAuthProvider
 
-- (BOOL)setWithDictionary:(NSDictionary *)dictionary
-                   error:(NSError *_Nullable *_Nullable)error {
-  return YES;
+- (instancetype)init {
+  [FIRAuthExceptionUtils raiseMethodNotImplementedExceptionWithReason:
+      @"This class is not meant to be initialized."];
+  return nil;
+}
+
++ (FIRAuthCredential *)credentialWithToken:(NSString *)token {
+  return [[FIRGitHubAuthCredential alloc] initWithToken:token];
 }
 
 @end

@@ -16,15 +16,26 @@
 
 #import <Foundation/Foundation.h>
 
-#import "FIRAuthRPCResponse.h"
+#import "FIRAuthCredential_Internal.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** @class FIRDeleteAccountResponse
-    @brief Represents the response from the deleteAccount endpoint.
-    @see https://developers.google.com/identity/toolkit/web/reference/relyingparty/deleteAccount
+/** @class FIRGitHubAuthCredential
+    @brief Internal implementation of FIRAuthCredential for GitHub credentials.
  */
-@interface FIRDeleteAccountResponse : NSObject<FIRAuthRPCResponse>
+@interface FIRGitHubAuthCredential : FIRAuthCredential <NSSecureCoding>
+
+/** @property token
+    @brief The GitHub OAuth access token.
+ */
+@property(nonatomic, readonly) NSString *token;
+
+/** @fn initWithToken:
+    @brief Designated initializer.
+    @param token The GitHub OAuth access token.
+ */
+- (nullable instancetype)initWithToken:(NSString *)token NS_DESIGNATED_INITIALIZER;
+
 @end
 
 NS_ASSUME_NONNULL_END
