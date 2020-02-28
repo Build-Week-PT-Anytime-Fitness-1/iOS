@@ -14,18 +14,26 @@
  * limitations under the License.
  */
 
-#import "FIRVerifyClientResponse.h"
+#import "FIRGoogleAuthProvider.h"
+
+#import "FIRGoogleAuthCredential.h"
+#import "FIRAuthExceptionUtils.h"
+
+// FIRGoogleAuthProviderID is defined in FIRAuthProvider.m.
 
 NS_ASSUME_NONNULL_BEGIN
 
-@implementation FIRVerifyClientResponse
+@implementation FIRGoogleAuthProvider
 
-- (BOOL)setWithDictionary:(NSDictionary *)dictionary
-                    error:(NSError *_Nullable *_Nullable)error {
-  _receipt = dictionary[@"receipt"];
-  _suggestedTimeOutDate = [dictionary[@"suggestedTimeout"] isKindOfClass:[NSString class]] ?
-      [NSDate dateWithTimeIntervalSinceNow:[dictionary[@"suggestedTimeout"] doubleValue]] : nil;
-  return YES;
+- (instancetype)init {
+  [FIRAuthExceptionUtils raiseMethodNotImplementedExceptionWithReason:
+      @"This class is not meant to be initialized."];
+  return nil;
+}
+
++ (FIRAuthCredential *)credentialWithIDToken:(NSString *)IDToken
+                                 accessToken:(NSString *)accessToken {
+  return [[FIRGoogleAuthCredential alloc] initWithIDToken:IDToken accessToken:accessToken];
 }
 
 @end

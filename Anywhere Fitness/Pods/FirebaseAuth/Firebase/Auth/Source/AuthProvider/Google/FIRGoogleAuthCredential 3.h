@@ -14,26 +14,24 @@
  * limitations under the License.
  */
 
-#import "FIRTwitterAuthProvider.h"
+#import <Foundation/Foundation.h>
 
-#import "FIRTwitterAuthCredential.h"
-#import "FIRAuthExceptionUtils.h"
-
-// FIRTwitterAuthProviderID is defined in FIRAuthProvider.m.
+#import "FIRAuthCredential_Internal.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@implementation FIRTwitterAuthProvider
+/** @class FIRGoogleAuthCredential
+    @brief Internal implementation of FIRAuthCredential for the Google IdP.
+ */
+@interface FIRGoogleAuthCredential : FIRAuthCredential <NSSecureCoding>
 
-- (instancetype)init {
-  [FIRAuthExceptionUtils raiseMethodNotImplementedExceptionWithReason:
-      @"This class is not meant to be initialized."];
-  return nil;
-}
-
-+ (FIRAuthCredential *)credentialWithToken:(NSString *)token secret:(NSString *)secret {
-  return [[FIRTwitterAuthCredential alloc] initWithToken:token secret:secret];
-}
+/** @fn initWithIDToken:accessToken:
+    @brief Designated initializer.
+    @param IDToken The ID Token obtained from Google.
+    @param accessToken The Access Token obtained from Google.
+ */
+- (nullable instancetype)initWithIDToken:(NSString *)IDToken accessToken:(NSString *)accessToken
+    NS_DESIGNATED_INITIALIZER;
 
 @end
 

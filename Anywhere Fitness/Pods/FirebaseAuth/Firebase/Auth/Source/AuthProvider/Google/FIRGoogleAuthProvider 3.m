@@ -14,21 +14,27 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
+#import "FIRGoogleAuthProvider.h"
 
-#import "FIRAuthRPCResponse.h"
+#import "FIRGoogleAuthCredential.h"
+#import "FIRAuthExceptionUtils.h"
+
+// FIRGoogleAuthProviderID is defined in FIRAuthProvider.m.
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** @class FIRGetOOBConfirmationCodeResponse
-    @brief Represents the response from the getOobConfirmationCode endpoint.
- */
-@interface FIRGetOOBConfirmationCodeResponse : NSObject <FIRAuthRPCResponse>
+@implementation FIRGoogleAuthProvider
 
-/** @property OOBCode
-    @brief The OOB code returned by the server in some cases.
- */
-@property(nonatomic, copy, readonly, nullable) NSString *OOBCode;
+- (instancetype)init {
+  [FIRAuthExceptionUtils raiseMethodNotImplementedExceptionWithReason:
+      @"This class is not meant to be initialized."];
+  return nil;
+}
+
++ (FIRAuthCredential *)credentialWithIDToken:(NSString *)IDToken
+                                 accessToken:(NSString *)accessToken {
+  return [[FIRGoogleAuthCredential alloc] initWithIDToken:IDToken accessToken:accessToken];
+}
 
 @end
 

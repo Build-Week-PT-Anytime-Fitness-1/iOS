@@ -14,22 +14,24 @@
  * limitations under the License.
  */
 
-#import "FIRCreateAuthURIResponse.h"
+#import <Foundation/Foundation.h>
+
+#import "FIRAuthCredential_Internal.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@implementation FIRCreateAuthURIResponse
+/** @class FIRGoogleAuthCredential
+    @brief Internal implementation of FIRAuthCredential for the Google IdP.
+ */
+@interface FIRGoogleAuthCredential : FIRAuthCredential <NSSecureCoding>
 
-- (BOOL)setWithDictionary:(NSDictionary *)dictionary
-                    error:(NSError *_Nullable *_Nullable)error {
-  _providerID = [dictionary[@"providerId"] copy];
-  _authURI = [dictionary[@"authUri"] copy];
-  _registered = [dictionary[@"registered"] boolValue];
-  _forExistingProvider = [dictionary[@"forExistingProvider"] boolValue];
-  _allProviders = [dictionary[@"allProviders"] copy];
-  _signinMethods = [dictionary[@"signinMethods"] copy];
-  return YES;
-}
+/** @fn initWithIDToken:accessToken:
+    @brief Designated initializer.
+    @param IDToken The ID Token obtained from Google.
+    @param accessToken The Access Token obtained from Google.
+ */
+- (nullable instancetype)initWithIDToken:(NSString *)IDToken accessToken:(NSString *)accessToken
+    NS_DESIGNATED_INITIALIZER;
 
 @end
 
