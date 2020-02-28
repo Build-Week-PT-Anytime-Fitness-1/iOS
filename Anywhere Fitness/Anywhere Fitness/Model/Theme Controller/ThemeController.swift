@@ -34,4 +34,39 @@ class ThemeController {
         }
     }
     
+    func adjustHomePageNavigationBar(for navigationBar: UINavigationBar) {
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.layer.backgroundColor = redButtonColor.cgColor
+        navigationBar.tintColor = redButtonColor
+        
+        if let items = navigationBar.items {
+            for item in items {
+                item.leftBarButtonItem?.tintColor = lightTextIconColor
+                item.rightBarButtonItem?.tintColor = lightTextIconColor
+            }
+        }
+        
+    }
+    
+    func adjustHomePageTabBar(for tabBar: UITabBar) {
+        tabBar.backgroundImage = UIImage()
+        tabBar.tintColor = lightTextIconColor
+    }
+    
+}
+
+extension UINavigationController {
+
+    func setStatusBar(backgroundColor: UIColor) {
+        let statusBarFrame: CGRect
+        if #available(iOS 13.0, *) {
+            statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero
+        } else {
+            statusBarFrame = UIApplication.shared.statusBarFrame
+        }
+        let statusBarView = UIView(frame: statusBarFrame)
+        statusBarView.backgroundColor = backgroundColor
+        view.addSubview(statusBarView)
+    }
+
 }
