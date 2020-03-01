@@ -245,6 +245,7 @@
                                     <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginButtonTapped:" destination="hNo-Tw-NaG" eventType="touchUpInside" id="ye0-Fv-8lu"/>
                                     <segue destination="cPH-ZU-qqM" kind="presentation" modalPresentationStyle="fullScreen" id="lEE-i6-pIs"/>
                                 </connections>
                             </button>
