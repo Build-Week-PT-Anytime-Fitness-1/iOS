@@ -9,6 +9,13 @@
 import Foundation
 import Firebase
 
+enum HTTPMethod: String {
+    case get = "GET"
+    case put = "PUT"
+    case post = "POST"
+    case delete = "DELETE"
+}
+
 class FirebaseController {
     let baseURL = URL(string: "https://anywhere-fitness-1.firebaseio.com/")!
     
@@ -32,5 +39,42 @@ class FirebaseController {
                 print("Auth Result: \(String(describing: authResult))")
             }
         }
+    }
+    
+    func createClass(name: String,
+                     location: String,
+                     type: ExerciseType,
+                     startTime: Date,
+                     duration: String,
+                     intensity: IntensityLevel,
+                     capacity: Int) -> ExerciseClass {
+        
+        let newClass = ExerciseClass(name: name,
+                                     location: location,
+                                     type: type,
+                                     startTime: startTime,
+                                     duration: duration,
+                                     intensityLevel: intensity,
+                                     attendees: 1,
+                                     maxClassSize: capacity,
+                                     id: nil)
+        
+        let requestURL = baseURL.appendingPathExtension("json")
+        var request = URLRequest(url: requestURL)
+        request.httpMethod = HTTPMethod.post.rawValue
+        
+        URLSession.shared.dataTask(with: request) { (_, response, error) in
+            if let error = error {
+                NSLog("Error POSTing new class: \(error)")
+                return
+            }
+            
+            if let response = response as? HTTPURLResponse,
+                response.statusCode != 201 {
+                NSLog("Response status code: \(response.statusCode)")
+            }
+        }.resume()
+        
+        return newClass
     }
 }

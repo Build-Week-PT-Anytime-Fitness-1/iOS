@@ -12,8 +12,10 @@ struct ExerciseClass {
     var name, location: String
     var type: ExerciseType
     var startTime: Date
+    var duration: String
     var intensityLevel: IntensityLevel
-    var attendees, maxClassSize, id: Int
+    var attendees, maxClassSize: Int
+    var id: Int?
 }
 
 enum ExerciseType {
