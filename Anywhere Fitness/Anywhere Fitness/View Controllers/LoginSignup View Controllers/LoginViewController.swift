@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     
     //MARK: - Properties
     var showPassword: Bool = false
+    var firebaseController = FirebaseController()
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -65,6 +66,21 @@ class LoginViewController: UIViewController {
             showPasswordButton.layer.backgroundColor = UIColor.clear.cgColor
         }
     }
+    
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        guard let email = emailTextField.text,
+            let password = passwordTextField.text else { return }
+        
+        if !email.isEmpty && !password.isEmpty {
+            firebaseController.firebaseLoginUser(email: email, password: password)
+        } else {
+            let alert = UIAlertController(title: "Oops!", message: "Please fill out all the required text fields before logging in.", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(alertAction)
+            self.present(alert, animated: true)
+        }
+    }
+    
     
 }
 

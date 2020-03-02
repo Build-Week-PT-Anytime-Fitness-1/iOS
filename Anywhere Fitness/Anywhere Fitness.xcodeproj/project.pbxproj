@@ -11,6 +11,12 @@
 		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
 		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
 		99517AF3C45780450C0EE50F /* Pods_Anywhere_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638276D3E887479148D41BF8 /* Pods_Anywhere_Fitness.framework */; };
+		A27496BA240B5B3E00A6F79E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A27496B9240B5B3D00A6F79E /* GoogleService-Info.plist */; };
+		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
+		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
+		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
+		A2F0D9152408DD8E0039F361 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F0D9142408DD8E0039F361 /* APIController.swift */; };
+		A2F0D9182408DE080039F361 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F0D9172408DE080039F361 /* FirebaseController.swift */; };
 		A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD12408C04100186D8E /* ProfileViewController.swift */; };
 		A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD42408C08500186D8E /* SearchViewController.swift */; };
 		A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */; };
@@ -19,12 +25,6 @@
 		A43F18122408659F0087D1D8 /* InstructorHomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43F18112408659F0087D1D8 /* InstructorHomePage.storyboard */; };
 		A43F1816240867180087D1D8 /* ClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F1814240867180087D1D8 /* ClassCollectionViewCell.swift */; };
 		A43F1817240867180087D1D8 /* ClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A43F1815240867180087D1D8 /* ClassCollectionViewCell.xib */; };
-		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
-		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
-		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
-		A2AACD602408CAB700C25EEF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AACD5F2408CAB700C25EEF /* GoogleService-Info.plist */; };
-		A2F0D9152408DD8E0039F361 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F0D9142408DD8E0039F361 /* APIController.swift */; };
-		A2F0D9182408DE080039F361 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F0D9172408DE080039F361 /* FirebaseController.swift */; };
 		A446C34C2406378E009AFC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C34B2406378E009AFC57 /* AppDelegate.swift */; };
 		A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C34D2406378E009AFC57 /* SceneDelegate.swift */; };
 		A446C35524063791009AFC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A446C35424063791009AFC57 /* Assets.xcassets */; };
@@ -57,6 +57,12 @@
 		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
 		385EB16AF72DB7095FACBA63 /* Pods-Anywhere Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere Fitness.release.xcconfig"; path = "Target Support Files/Pods-Anywhere Fitness/Pods-Anywhere Fitness.release.xcconfig"; sourceTree = "<group>"; };
 		638276D3E887479148D41BF8 /* Pods_Anywhere_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anywhere_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A27496B9240B5B3D00A6F79E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
+		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
+		A2F0D9142408DD8E0039F361 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		A2F0D9172408DE080039F361 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		A423CCD12408C04100186D8E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A423CCD42408C08500186D8E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomePageViewController.swift; sourceTree = "<group>"; };
@@ -65,12 +71,6 @@
 		A43F18112408659F0087D1D8 /* InstructorHomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstructorHomePage.storyboard; sourceTree = "<group>"; };
 		A43F1814240867180087D1D8 /* ClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCollectionViewCell.swift; sourceTree = "<group>"; };
 		A43F1815240867180087D1D8 /* ClassCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCollectionViewCell.xib; sourceTree = "<group>"; };
-		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
-		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
-		A2AACD5F2408CAB700C25EEF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A2F0D9142408DD8E0039F361 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
-		A2F0D9172408DE080039F361 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		A446C3482406378E009AFC57 /* Anywhere Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anywhere Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A446C34B2406378E009AFC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A446C34D2406378E009AFC57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 				A446C3602406380E009AFC57 /* Storyboards */,
 				A4820FA724063A920045D379 /* Fonts */,
 				A446C35424063791009AFC57 /* Assets.xcassets */,
-				A2AACD5F2408CAB700C25EEF /* GoogleService-Info.plist */,
+				A27496B9240B5B3D00A6F79E /* GoogleService-Info.plist */,
 				A446C35924063791009AFC57 /* Info.plist */,
 			);
 			path = "Anywhere Fitness";
@@ -362,11 +362,11 @@
 				A4820FBB24063AB80045D379 /* Ubuntu-L.ttf in Resources */,
 				A4820FBE24063AB80045D379 /* Ubuntu-C.ttf in Resources */,
 				A4820FBA24063AB80045D379 /* Ubuntu-BI.ttf in Resources */,
-				A2AACD602408CAB700C25EEF /* GoogleService-Info.plist in Resources */,
 				A43F18122408659F0087D1D8 /* InstructorHomePage.storyboard in Resources */,
 				A446C36524063844009AFC57 /* LoginSignup.storyboard in Resources */,
 				A43F1817240867180087D1D8 /* ClassCollectionViewCell.xib in Resources */,
 				A446C35524063791009AFC57 /* Assets.xcassets in Resources */,
+				A27496BA240B5B3E00A6F79E /* GoogleService-Info.plist in Resources */,
 				A4820FBF24063AB80045D379 /* UbuntuMono-RI.ttf in Resources */,
 				A4820FC124063AB80045D379 /* Ubuntu-MI.ttf in Resources */,
 			);
