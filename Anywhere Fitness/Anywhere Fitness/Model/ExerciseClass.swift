@@ -14,8 +14,8 @@ struct ExerciseClass {
     var startTime: Date
     var duration: String
     var intensityLevel: IntensityLevel
-    var attendees, maxClassSize: Int
-    var id: Int?
+    var attendees, maxClassSize: Int // Maybe consider changing to a double since cloud Firestore puts all numbers as doubles
+    var id: UUID
 }
 
 enum ExerciseType {
