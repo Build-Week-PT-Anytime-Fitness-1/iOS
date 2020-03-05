@@ -11,6 +11,9 @@
         <array key="Ubuntu-B.ttf">
             <string>Ubuntu-Bold</string>
         </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Discover-->
@@ -230,14 +233,14 @@
                     <connections>
                         <segue destination="Nqk-aS-OFz" kind="relationship" relationship="viewControllers" id="YYY-0G-kQQ"/>
                         <segue destination="GHs-Sj-cuS" kind="relationship" relationship="viewControllers" id="TUx-xg-5v8"/>
-                        <segue destination="MeB-iU-Pcl" kind="relationship" relationship="viewControllers" id="3iP-2y-HxR"/>
+                        <segue destination="MeB-iU-Pcl" kind="relationship" relationship="viewControllers" id="1q3-ZB-R1E"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMJ-fb-979" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-68" y="1526"/>
         </scene>
-        <!--Search-->
+        <!--Item-->
         <scene sceneID="QPt-uw-naL">
             <objects>
                 <viewController id="MeB-iU-Pcl" customClass="SearchViewController" customModule="Anywhere_Fitness" customModuleProvider="target" sceneMemberID="viewController">
@@ -273,19 +276,47 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9h-Td-L3G">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9h-Td-L3G">
                                 <rect key="frame" x="350" y="137" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="DMv-2z-tTY"/>
                                     <constraint firstAttribute="width" constant="44" id="QTv-ux-E78"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="line.horizontal.3" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="27" scale="large"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B1f-nq-q6Q" kind="presentation" modalPresentationStyle="fullScreen" id="mkJ-t1-BNX"/>
+                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mY1-zU-4fp">
+                                <rect key="frame" x="20" y="201" width="374" height="592"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="105" id="ASb-qd-QVB">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ASb-qd-QVB" id="h0B-6O-OeX">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="105"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="K7h-9f-tKK" kind="presentation" modalPresentationStyle="fullScreen" id="VN0-pf-DB9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Xnk-Hj-rrc" firstAttribute="top" secondItem="0Oo-UR-3RM" secondAttribute="bottom" constant="20" id="2dR-Sn-b9i"/>
                             <constraint firstItem="Xnk-Hj-rrc" firstAttribute="leading" secondItem="mQc-rm-WLp" secondAttribute="leading" constant="20" id="Aay-pD-rze"/>
                             <constraint firstItem="0Oo-UR-3RM" firstAttribute="leading" secondItem="mQc-rm-WLp" secondAttribute="leading" id="Bsd-YG-26I"/>
+                            <constraint firstItem="mQc-rm-WLp" firstAttribute="bottom" secondItem="mY1-zU-4fp" secondAttribute="bottom" constant="20" id="HSY-G5-ANa"/>
+                            <constraint firstItem="mY1-zU-4fp" firstAttribute="top" secondItem="5EY-sh-0Za" secondAttribute="bottom" constant="20" id="INY-9T-R6q"/>
+                            <constraint firstItem="mQc-rm-WLp" firstAttribute="trailing" secondItem="mY1-zU-4fp" secondAttribute="trailing" constant="20" id="JNL-Tp-FTq"/>
                             <constraint firstItem="E9h-Td-L3G" firstAttribute="centerY" secondItem="5EY-sh-0Za" secondAttribute="centerY" id="Jyz-g2-gRG"/>
                             <constraint firstItem="5EY-sh-0Za" firstAttribute="leading" secondItem="mQc-rm-WLp" secondAttribute="leading" constant="20" id="X3r-Hy-tRU"/>
                             <constraint firstItem="Xnk-Hj-rrc" firstAttribute="leading" secondItem="mQc-rm-WLp" secondAttribute="leading" constant="20" id="fKF-Wk-I4y"/>
@@ -293,14 +324,524 @@
                             <constraint firstItem="0Oo-UR-3RM" firstAttribute="top" secondItem="FzB-L8-aGC" secondAttribute="top" id="hB8-Xg-Cjg"/>
                             <constraint firstItem="mQc-rm-WLp" firstAttribute="trailing" secondItem="E9h-Td-L3G" secondAttribute="trailing" constant="20" id="iVS-Oo-iwO"/>
                             <constraint firstItem="0Oo-UR-3RM" firstAttribute="trailing" secondItem="mQc-rm-WLp" secondAttribute="trailing" id="rL6-za-oOC"/>
+                            <constraint firstItem="mY1-zU-4fp" firstAttribute="leading" secondItem="mQc-rm-WLp" secondAttribute="leading" constant="20" id="tiF-oO-7kO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mQc-rm-WLp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="2cd-t0-6OH"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Z1p-1N-ble"/>
+                    <navigationItem key="navigationItem" id="Cao-l1-9H9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QT7-Qr-Vje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="941" y="1525"/>
+        </scene>
+        <!--Search Filter View Controller-->
+        <scene sceneID="FNO-nZ-mtl">
+            <objects>
+                <viewController id="B1f-nq-q6Q" customClass="SearchFilterViewController" customModule="Anywhere_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6AI-r3-DM3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Paf-DY-qsQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Filter" id="2l5-WX-0Io">
+                                        <barButtonItem key="leftBarButtonItem" image="arrow.left" catalog="system" id="EKv-YP-j1K"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Reset" id="4XP-qj-pUk"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hOi-A4-TvW">
+                                <rect key="frame" x="20" y="108" width="374" height="56.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="162" translatesAutoresizingMaskIntoConstraints="NO" id="yIe-Ff-6Lb">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZa-ia-KlU">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:00 AM - 11:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri1-51-1lC">
+                                                <rect key="frame" x="243.5" y="0.0" width="130.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ri1-51-1lC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bZa-ia-KlU" secondAttribute="trailing" constant="8" id="3KO-8H-F6R"/>
+                                        </constraints>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PfL-nU-adV">
+                                        <rect key="frame" x="-2" y="26.5" width="378" height="31"/>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="e8R-Y9-Ncq">
+                                <rect key="frame" x="20" y="172.5" width="374" height="56.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="162" translatesAutoresizingMaskIntoConstraints="NO" id="URx-eS-1nZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Search Radius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6m-ld-TGp">
+                                                <rect key="frame" x="0.0" y="0.0" width="134.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Mi - 35 Mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6d-Is-Uo4">
+                                                <rect key="frame" x="296.5" y="0.0" width="77.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="T6d-Is-Uo4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="n6m-ld-TGp" secondAttribute="trailing" constant="8" id="07P-Pl-5eF"/>
+                                        </constraints>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rwF-fz-dlE">
+                                        <rect key="frame" x="-2" y="26.5" width="378" height="31"/>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Z7b-Cp-KMH">
+                                <rect key="frame" x="20" y="245" width="374" height="70.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Intensity Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ess-8N-pT9">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="c5d-Cf-kNz">
+                                        <rect key="frame" x="0.0" y="26.5" width="374" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ef-cR-8WI">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="jSO-Bc-Iuk"/>
+                                                    <constraint firstAttribute="width" constant="90" id="q7u-dU-C28"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <state key="normal" title="Low">
+                                                    <color key="titleColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ij-J1-hWT">
+                                                <rect key="frame" x="142" y="0.0" width="90" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="6dx-Iv-nJg"/>
+                                                    <constraint firstAttribute="width" constant="90" id="iuU-F1-eKK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <state key="normal" title="Medium">
+                                                    <color key="titleColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aO-3P-RDa">
+                                                <rect key="frame" x="284" y="0.0" width="90" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="19f-35-xjM"/>
+                                                    <constraint firstAttribute="height" constant="44" id="xSz-Ei-ifk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <state key="normal" title="High">
+                                                    <color key="titleColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="vnG-8I-mHJ">
+                                <rect key="frame" x="20" y="323.5" width="374" height="70.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Spots Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiO-or-bx8">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="vNB-ne-J2b">
+                                        <rect key="frame" x="0.0" y="26.5" width="374" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qms-o8-Jne">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="I7R-Rp-L31"/>
+                                                    <constraint firstAttribute="width" constant="90" id="mQs-yy-ee6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <state key="normal" title="1 Spot">
+                                                    <color key="titleColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpN-vw-ak3">
+                                                <rect key="frame" x="142" y="0.0" width="90" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="B0Z-oq-7ue"/>
+                                                    <constraint firstAttribute="width" constant="90" id="Hbz-V0-yKk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <state key="normal" title="2 Spots">
+                                                    <color key="titleColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ey7-lX-XgI">
+                                                <rect key="frame" x="284" y="0.0" width="90" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Cco-88-Fnk"/>
+                                                    <constraint firstAttribute="width" constant="90" id="blM-dy-HsN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <state key="normal" title="3 Spots">
+                                                    <color key="titleColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ax8-qX-dFd">
+                                <rect key="frame" x="20" y="410" width="374" height="136.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Experience Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QO-Q7-edW">
+                                        <rect key="frame" x="0.0" y="0.0" width="130.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1I2-Ud-GpI">
+                                        <rect key="frame" x="0.0" y="27.5" width="365" height="109"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="262" translatesAutoresizingMaskIntoConstraints="NO" id="MK4-8X-Qdf">
+                                                <rect key="frame" x="0.0" y="0.0" width="365" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Beginner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSb-Ou-Tew">
+                                                        <rect key="frame" x="0.0" y="0.0" width="54" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u7B-wS-iMY">
+                                                        <rect key="frame" x="316" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="239" translatesAutoresizingMaskIntoConstraints="NO" id="AIf-lX-jqJ">
+                                                <rect key="frame" x="0.0" y="39" width="365" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Intermediate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aby-wO-FC8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="77" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PzI-TV-lBC">
+                                                        <rect key="frame" x="316" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="258" translatesAutoresizingMaskIntoConstraints="NO" id="fE5-lg-FDZ">
+                                                <rect key="frame" x="0.0" y="78" width="365" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Advanced" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wF-vW-dt2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQy-mB-ygX">
+                                                        <rect key="frame" x="316" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rZ3-jU-JKG">
+                                <rect key="frame" x="20" y="566.5" width="374" height="175.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pn-oQ-75k">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="riy-7x-2xl">
+                                        <rect key="frame" x="0.0" y="27.5" width="367.5" height="148"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="289" translatesAutoresizingMaskIntoConstraints="NO" id="H9a-qb-fQh">
+                                                <rect key="frame" x="0.0" y="0.0" width="367.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Yoga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPV-ch-9H9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUl-0X-Ini">
+                                                        <rect key="frame" x="318.5" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="268" translatesAutoresizingMaskIntoConstraints="NO" id="xZk-cO-k0q">
+                                                <rect key="frame" x="0.0" y="39" width="367.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Running" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yy-SJ-ip5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50.5" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SY8-l4-swd">
+                                                        <rect key="frame" x="318.5" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="256" translatesAutoresizingMaskIntoConstraints="NO" id="AP4-lK-u2L">
+                                                <rect key="frame" x="0.0" y="78" width="367.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Swimming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdO-xi-DTA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W92-Wd-4cN">
+                                                        <rect key="frame" x="318.5" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="275" translatesAutoresizingMaskIntoConstraints="NO" id="7zG-PZ-VXL">
+                                                <rect key="frame" x="0.0" y="117" width="367.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Cycling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cV-fS-9fL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OvK-eI-Cn5">
+                                                        <rect key="frame" x="318.5" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qn0-4m-dwD">
+                                <rect key="frame" x="125.5" y="798" width="163" height="44"/>
+                                <color key="backgroundColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DVs-aR-jhv"/>
+                                    <constraint firstAttribute="width" constant="163" id="Ddq-99-yQ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                <state key="normal" title="Apply">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rZ3-jU-JKG" firstAttribute="top" secondItem="ax8-qX-dFd" secondAttribute="bottom" constant="20" id="0Va-iI-jsy"/>
+                            <constraint firstItem="Xsl-O7-obe" firstAttribute="bottom" secondItem="Qn0-4m-dwD" secondAttribute="bottom" constant="20" id="6Sj-fJ-G7b"/>
+                            <constraint firstItem="Xsl-O7-obe" firstAttribute="trailing" secondItem="rZ3-jU-JKG" secondAttribute="trailing" constant="20" id="7P9-YF-LML"/>
+                            <constraint firstItem="rZ3-jU-JKG" firstAttribute="leading" secondItem="Xsl-O7-obe" secondAttribute="leading" constant="20" id="7RG-LF-QK9"/>
+                            <constraint firstItem="Xsl-O7-obe" firstAttribute="trailing" secondItem="hOi-A4-TvW" secondAttribute="trailing" constant="20" id="8W7-ea-Fkt"/>
+                            <constraint firstItem="ax8-qX-dFd" firstAttribute="leading" secondItem="Xsl-O7-obe" secondAttribute="leading" constant="20" id="GTl-eD-u8J"/>
+                            <constraint firstItem="Paf-DY-qsQ" firstAttribute="trailing" secondItem="Xsl-O7-obe" secondAttribute="trailing" id="KNQ-HX-gyw"/>
+                            <constraint firstItem="Z7b-Cp-KMH" firstAttribute="leading" secondItem="Xsl-O7-obe" secondAttribute="leading" constant="20" id="OHJ-xQ-PQO"/>
+                            <constraint firstItem="ax8-qX-dFd" firstAttribute="centerX" secondItem="Xsl-O7-obe" secondAttribute="centerX" id="Pv4-Ah-vQO"/>
+                            <constraint firstItem="e8R-Y9-Ncq" firstAttribute="top" secondItem="hOi-A4-TvW" secondAttribute="bottom" constant="8" id="Qph-42-yAn"/>
+                            <constraint firstItem="Xsl-O7-obe" firstAttribute="trailing" secondItem="Z7b-Cp-KMH" secondAttribute="trailing" constant="20" id="UFa-aB-625"/>
+                            <constraint firstItem="hOi-A4-TvW" firstAttribute="leading" secondItem="Xsl-O7-obe" secondAttribute="leading" constant="20" id="UcZ-Lf-EyF"/>
+                            <constraint firstItem="vnG-8I-mHJ" firstAttribute="centerX" secondItem="Xsl-O7-obe" secondAttribute="centerX" id="VJT-0u-g7J"/>
+                            <constraint firstItem="ax8-qX-dFd" firstAttribute="top" secondItem="vnG-8I-mHJ" secondAttribute="bottom" constant="16" id="Wkz-dk-IdD"/>
+                            <constraint firstItem="hOi-A4-TvW" firstAttribute="top" secondItem="Paf-DY-qsQ" secondAttribute="bottom" constant="20" id="Xgu-2Z-ZEg"/>
+                            <constraint firstItem="Xsl-O7-obe" firstAttribute="trailing" secondItem="e8R-Y9-Ncq" secondAttribute="trailing" constant="20" id="a38-EE-7ek"/>
+                            <constraint firstItem="Z7b-Cp-KMH" firstAttribute="centerX" secondItem="Xsl-O7-obe" secondAttribute="centerX" id="awr-Xf-a8Q"/>
+                            <constraint firstItem="vnG-8I-mHJ" firstAttribute="top" secondItem="Z7b-Cp-KMH" secondAttribute="bottom" constant="8" id="e5j-TU-uNa"/>
+                            <constraint firstItem="Paf-DY-qsQ" firstAttribute="top" secondItem="Xsl-O7-obe" secondAttribute="top" id="ePC-xT-cQJ"/>
+                            <constraint firstItem="Paf-DY-qsQ" firstAttribute="leading" secondItem="Xsl-O7-obe" secondAttribute="leading" id="eRX-ZU-XjY"/>
+                            <constraint firstItem="vnG-8I-mHJ" firstAttribute="leading" secondItem="Xsl-O7-obe" secondAttribute="leading" constant="20" id="gPi-em-kkK"/>
+                            <constraint firstItem="Qn0-4m-dwD" firstAttribute="centerX" secondItem="Xsl-O7-obe" secondAttribute="centerX" id="jSa-l6-thB"/>
+                            <constraint firstItem="Z7b-Cp-KMH" firstAttribute="top" secondItem="e8R-Y9-Ncq" secondAttribute="bottom" constant="16" id="lEh-CE-crY"/>
+                            <constraint firstItem="Xsl-O7-obe" firstAttribute="trailing" secondItem="vnG-8I-mHJ" secondAttribute="trailing" constant="20" id="mzZ-vd-ffl"/>
+                            <constraint firstItem="e8R-Y9-Ncq" firstAttribute="leading" secondItem="Xsl-O7-obe" secondAttribute="leading" constant="20" id="sWg-va-sD4"/>
+                            <constraint firstItem="Xsl-O7-obe" firstAttribute="trailing" secondItem="ax8-qX-dFd" secondAttribute="trailing" constant="20" id="zCb-lc-w5d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xsl-O7-obe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R8z-WD-Zuz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEd-4r-xgv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="1525"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4dD-c3-KYb">
+            <objects>
+                <viewController id="Ky3-Lz-996" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6bd-uV-nhh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b6A-55-gVl">
+                                <rect key="frame" x="0.0" y="88" width="414" height="211.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b6A-55-gVl" secondAttribute="height" multiplier="375:192" constant="1" id="XsN-EY-oIF"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EMq-nO-5EI">
+                                <rect key="frame" x="20" y="339.5" width="374" height="109.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taryn's Dojo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kb-C8-9FC">
+                                        <rect key="frame" x="0.0" y="0.0" width="155.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="28"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cincinnati" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBn-86-4fw">
+                                        <rect key="frame" x="0.0" y="39.5" width="76.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq7-am-o0D">
+                                        <rect key="frame" x="0.0" y="67" width="58" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read all Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxE-HX-YLd">
+                                        <rect key="frame" x="0.0" y="94.5" width="98.5" height="15"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8SR-gN-yQl">
+                                <rect key="frame" x="20" y="469" width="374" height="86.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About the Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4H7-9d-d1j">
+                                        <rect key="frame" x="0.0" y="0.0" width="199.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="28"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Yoga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p19-do-Hnm">
+                                        <rect key="frame" x="0.0" y="39.5" width="117" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equipment: None" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kun-I5-HJR">
+                                        <rect key="frame" x="0.0" y="67" width="134.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDL-Gj-gPK">
+                                <rect key="frame" x="20" y="563.5" width="374" height="57.5"/>
+                                <string key="text">If you are ready to endure severe pain with the purpose of getting fit and learning self defence, then Taryn's Dojo is the place to go.</string>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cQI-dM-qb7">
+                                <rect key="frame" x="20" y="641" width="374" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sf-3k-d9O">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="28"/>
+                                        <color key="textColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234, Main Street, Cincinnati, OH41073 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ch-Dn-hrj">
+                                        <rect key="frame" x="0.0" y="39.5" width="306.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                        <color key="textColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XX-h0-wEv">
+                                <rect key="frame" x="109.5" y="768" width="195" height="44"/>
+                                <color key="backgroundColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="Y73-yT-LX0"/>
+                                    <constraint firstAttribute="height" constant="44" id="kvy-cN-7YR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                                <state key="normal" title="View Schedule">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.94509803920000002" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Tq-8z-2AS" kind="show" id="8XX-yZ-vv9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vHF-FG-Xbn" firstAttribute="trailing" secondItem="cQI-dM-qb7" secondAttribute="trailing" constant="20" id="1yG-Vd-G1z"/>
+                            <constraint firstItem="vHF-FG-Xbn" firstAttribute="trailing" secondItem="8SR-gN-yQl" secondAttribute="trailing" constant="20" id="9oQ-UX-8xI"/>
+                            <constraint firstItem="vHF-FG-Xbn" firstAttribute="trailing" secondItem="DDL-Gj-gPK" secondAttribute="trailing" constant="20" id="AD8-vD-Wcm"/>
+                            <constraint firstItem="DDL-Gj-gPK" firstAttribute="top" secondItem="8SR-gN-yQl" secondAttribute="bottom" constant="8" id="BDj-Nh-27c"/>
+                            <constraint firstItem="DDL-Gj-gPK" firstAttribute="leading" secondItem="vHF-FG-Xbn" secondAttribute="leading" constant="20" id="Frr-Uq-wB5"/>
+                            <constraint firstItem="vHF-FG-Xbn" firstAttribute="trailing" secondItem="EMq-nO-5EI" secondAttribute="trailing" constant="20" id="HJV-Ws-ueV"/>
+                            <constraint firstItem="b6A-55-gVl" firstAttribute="leading" secondItem="vHF-FG-Xbn" secondAttribute="leading" id="LC5-WG-G4N"/>
+                            <constraint firstItem="EMq-nO-5EI" firstAttribute="top" secondItem="b6A-55-gVl" secondAttribute="bottom" constant="40" id="Nwb-mS-ZPp"/>
+                            <constraint firstItem="cQI-dM-qb7" firstAttribute="leading" secondItem="vHF-FG-Xbn" secondAttribute="leading" constant="20" id="Q88-xL-xRU"/>
+                            <constraint firstItem="8SR-gN-yQl" firstAttribute="top" secondItem="EMq-nO-5EI" secondAttribute="bottom" constant="20" id="QHf-aJ-iPb"/>
+                            <constraint firstItem="8SR-gN-yQl" firstAttribute="leading" secondItem="vHF-FG-Xbn" secondAttribute="leading" constant="20" id="SeE-Sl-lwf"/>
+                            <constraint firstItem="cQI-dM-qb7" firstAttribute="top" secondItem="DDL-Gj-gPK" secondAttribute="bottom" constant="20" id="Zkg-Zo-5DN"/>
+                            <constraint firstItem="b6A-55-gVl" firstAttribute="centerX" secondItem="vHF-FG-Xbn" secondAttribute="centerX" id="ZzV-Zg-Um3"/>
+                            <constraint firstItem="vHF-FG-Xbn" firstAttribute="trailing" secondItem="b6A-55-gVl" secondAttribute="trailing" id="eTM-qd-jep"/>
+                            <constraint firstItem="vHF-FG-Xbn" firstAttribute="bottom" secondItem="1XX-h0-wEv" secondAttribute="bottom" constant="50" id="jcE-Mj-Hxh"/>
+                            <constraint firstItem="1XX-h0-wEv" firstAttribute="centerX" secondItem="vHF-FG-Xbn" secondAttribute="centerX" id="vb0-vV-zDC"/>
+                            <constraint firstItem="EMq-nO-5EI" firstAttribute="leading" secondItem="vHF-FG-Xbn" secondAttribute="leading" constant="20" id="w6P-sf-RcR"/>
+                            <constraint firstItem="DDL-Gj-gPK" firstAttribute="centerX" secondItem="vHF-FG-Xbn" secondAttribute="centerX" id="yWW-bE-rgd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vHF-FG-Xbn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HQu-Id-daB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyb-RF-4Ro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.9275362318845" y="2241.9642857142858"/>
+        </scene>
+        <!--Class Detail View Controller-->
+        <scene sceneID="zbw-XI-pJN">
+            <objects>
+                <viewController id="0Tq-8z-2AS" customClass="ClassDetailViewController" customModule="Anywhere_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YVe-rd-hv1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IVu-21-gYM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ETN-xg-dVU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nKX-a8-YCZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3639" y="2242"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ndw-lX-Ag8">
@@ -332,9 +873,28 @@
             </objects>
             <point key="canvasLocation" x="942" y="812"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yb0-oM-0uy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K7h-9f-tKK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R1F-AE-c2m">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ky3-Lz-996" kind="relationship" relationship="rootViewController" id="sfv-3b-kjx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkL-pY-LzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834.7826086956522" y="2241.9642857142858"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
         <image name="rectangle.grid.2x2.fill" catalog="system" width="64" height="48"/>
     </resources>

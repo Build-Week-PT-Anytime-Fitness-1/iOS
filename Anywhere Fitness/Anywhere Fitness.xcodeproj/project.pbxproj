@@ -29,6 +29,10 @@
 		A446C36524063844009AFC57 /* LoginSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A446C36424063844009AFC57 /* LoginSignup.storyboard */; };
 		A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A446C367240638F6009AFC57 /* LandingPageViewController.swift */; };
 		A462FF93240732C000465605 /* AccountConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462FF92240732C000465605 /* AccountConfirmationViewController.swift */; };
+		A46AB2502411691000099305 /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46AB24E2411691000099305 /* ClassTableViewCell.swift */; };
+		A46AB2512411691000099305 /* ClassTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A46AB24F2411691000099305 /* ClassTableViewCell.xib */; };
+		A46AB2532411775B00099305 /* SearchFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46AB2522411775B00099305 /* SearchFilterViewController.swift */; };
+		A46AB256241177B300099305 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46AB255241177B300099305 /* ClassDetailViewController.swift */; };
 		A473EEA5240728D60003B86A /* ThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A473EEA4240728D60003B86A /* ThemeController.swift */; };
 		A4820FB524063AB80045D379 /* UbuntuMono-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FA824063AB80045D379 /* UbuntuMono-BI.ttf */; };
 		A4820FB624063AB80045D379 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FA924063AB80045D379 /* Ubuntu-B.ttf */; };
@@ -74,6 +78,10 @@
 		A446C36424063844009AFC57 /* LoginSignup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSignup.storyboard; sourceTree = "<group>"; };
 		A446C367240638F6009AFC57 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		A462FF92240732C000465605 /* AccountConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountConfirmationViewController.swift; sourceTree = "<group>"; };
+		A46AB24E2411691000099305 /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		A46AB24F2411691000099305 /* ClassTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassTableViewCell.xib; sourceTree = "<group>"; };
+		A46AB2522411775B00099305 /* SearchFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterViewController.swift; sourceTree = "<group>"; };
+		A46AB255241177B300099305 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
 		A473EEA4240728D60003B86A /* ThemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeController.swift; sourceTree = "<group>"; };
 		A4820FA824063AB80045D379 /* UbuntuMono-BI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UbuntuMono-BI.ttf"; sourceTree = "<group>"; };
 		A4820FA924063AB80045D379 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A423CCD42408C08500186D8E /* SearchViewController.swift */,
+				A46AB2522411775B00099305 /* SearchFilterViewController.swift */,
 			);
 			path = "Search View Controllers";
 			sourceTree = "<group>";
@@ -152,6 +161,7 @@
 		A43F1813240866EB0087D1D8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A46AB24B241168E300099305 /* ClassTableViewCell */,
 				A43F18182408671E0087D1D8 /* ClassCollectionViewCell */,
 			);
 			path = Views;
@@ -216,6 +226,7 @@
 		A446C36124063817009AFC57 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A46AB2542411779F00099305 /* Class ViewControllers */,
 				A446C366240638DB009AFC57 /* LoginSignup View Controllers */,
 				A43F180A240864E00087D1D8 /* HomePage View Controllers */,
 				A423CCD02408C01700186D8E /* Profile View Controllers */,
@@ -234,6 +245,23 @@
 				A4EECD042407410700824B91 /* LoginViewController.swift */,
 			);
 			path = "LoginSignup View Controllers";
+			sourceTree = "<group>";
+		};
+		A46AB24B241168E300099305 /* ClassTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A46AB24E2411691000099305 /* ClassTableViewCell.swift */,
+				A46AB24F2411691000099305 /* ClassTableViewCell.xib */,
+			);
+			path = ClassTableViewCell;
+			sourceTree = "<group>";
+		};
+		A46AB2542411779F00099305 /* Class ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A46AB255241177B300099305 /* ClassDetailViewController.swift */,
+			);
+			path = "Class ViewControllers";
 			sourceTree = "<group>";
 		};
 		A473EEA3240728CA0003B86A /* Model */ = {
@@ -361,6 +389,7 @@
 				A43F1817240867180087D1D8 /* ClassCollectionViewCell.xib in Resources */,
 				A446C35524063791009AFC57 /* Assets.xcassets in Resources */,
 				A27496BA240B5B3E00A6F79E /* GoogleService-Info.plist in Resources */,
+				A46AB2512411691000099305 /* ClassTableViewCell.xib in Resources */,
 				A4820FBF24063AB80045D379 /* UbuntuMono-RI.ttf in Resources */,
 				A4820FC124063AB80045D379 /* Ubuntu-MI.ttf in Resources */,
 			);
@@ -419,16 +448,19 @@
 				A446C34C2406378E009AFC57 /* AppDelegate.swift in Sources */,
 				A4EECD032407399A00824B91 /* SignUpViewController.swift in Sources */,
 				A4820FC52406F1CE0045D379 /* AccountSelectionViewController.swift in Sources */,
+				A46AB2532411775B00099305 /* SearchFilterViewController.swift in Sources */,
 				A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */,
 				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
 				A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */,
 				A473EEA5240728D60003B86A /* ThemeController.swift in Sources */,
+				A46AB2502411691000099305 /* ClassTableViewCell.swift in Sources */,
 				A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */,
 				A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */,
 				A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */,
 				A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */,
 				A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */,
 				A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */,
+				A46AB256241177B300099305 /* ClassDetailViewController.swift in Sources */,
 				A2F0D9152408DD8E0039F361 /* APIController.swift in Sources */,
 				A462FF93240732C000465605 /* AccountConfirmationViewController.swift in Sources */,
 				A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */,
