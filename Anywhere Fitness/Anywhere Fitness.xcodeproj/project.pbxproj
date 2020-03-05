@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
-		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
-		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
 		99517AF3C45780450C0EE50F /* Pods_Anywhere_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638276D3E887479148D41BF8 /* Pods_Anywhere_Fitness.framework */; };
 		A27496BA240B5B3E00A6F79E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A27496B9240B5B3D00A6F79E /* GoogleService-Info.plist */; };
 		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
@@ -52,9 +49,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
-		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
 		385EB16AF72DB7095FACBA63 /* Pods-Anywhere Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere Fitness.release.xcconfig"; path = "Target Support Files/Pods-Anywhere Fitness/Pods-Anywhere Fitness.release.xcconfig"; sourceTree = "<group>"; };
 		638276D3E887479148D41BF8 /* Pods_Anywhere_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anywhere_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27496B9240B5B3D00A6F79E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };

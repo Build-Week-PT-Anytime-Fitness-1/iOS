@@ -9,7 +9,8 @@
 import Foundation
 
 struct Instructor {
-    var username, email, password: String
-    var id: Int?
-    var classes: [ExerciseClass]
+    var email, password: String
+    var id: UUID
+//    var classes: [ExerciseClass]
+//    var userType: UserType
 }

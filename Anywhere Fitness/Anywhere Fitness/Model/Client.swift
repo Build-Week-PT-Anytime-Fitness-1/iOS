@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Client {
-    var username, email, password: String
-    var id: Int?
+struct User {
+    var email, password: String
+    var id: UUID
 }
