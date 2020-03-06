@@ -89,7 +89,7 @@ class SignUpViewController: UIViewController {
             !email.isEmpty,
             let password = passwordTextField.text,
             !password.isEmpty {
-            firebaseController.firebaseRegisterNewUser(email: email, password: password)
+            //firebaseController.firebaseRegisterNewUser(user: email, signupAccountType: password)
         }
     }
     

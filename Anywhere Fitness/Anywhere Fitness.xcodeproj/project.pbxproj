@@ -48,6 +48,12 @@
 		A4820FC024063AB80045D379 /* Ubuntu-M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FB324063AB80045D379 /* Ubuntu-M.ttf */; };
 		A4820FC124063AB80045D379 /* Ubuntu-MI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4820FB424063AB80045D379 /* Ubuntu-MI.ttf */; };
 		A4820FC52406F1CE0045D379 /* AccountSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4820FC42406F1CE0045D379 /* AccountSelectionViewController.swift */; };
+		A4AFF17924119C3300677DA1 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFF17724119C3300677DA1 /* LessonTableViewCell.swift */; };
+		A4AFF17A24119C3300677DA1 /* LessonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AFF17824119C3300677DA1 /* LessonTableViewCell.xib */; };
+		A4AFF17C2411A05C00677DA1 /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFF17B2411A05C00677DA1 /* LessonTableViewController.swift */; };
+		A4AFF17E2411A08A00677DA1 /* LessonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFF17D2411A08A00677DA1 /* LessonDetailViewController.swift */; };
+		A4AFF1842411EA9600677DA1 /* InstructorClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFF1822411EA9600677DA1 /* InstructorClassCollectionViewCell.swift */; };
+		A4AFF1852411EA9600677DA1 /* InstructorClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AFF1832411EA9600677DA1 /* InstructorClassCollectionViewCell.xib */; };
 		A4EECD032407399A00824B91 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EECD022407399A00824B91 /* SignUpViewController.swift */; };
 		A4EECD052407410700824B91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EECD042407410700824B91 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +103,12 @@
 		A4820FB324063AB80045D379 /* Ubuntu-M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-M.ttf"; sourceTree = "<group>"; };
 		A4820FB424063AB80045D379 /* Ubuntu-MI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MI.ttf"; sourceTree = "<group>"; };
 		A4820FC42406F1CE0045D379 /* AccountSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSelectionViewController.swift; sourceTree = "<group>"; };
+		A4AFF17724119C3300677DA1 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
+		A4AFF17824119C3300677DA1 /* LessonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonTableViewCell.xib; sourceTree = "<group>"; };
+		A4AFF17B2411A05C00677DA1 /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		A4AFF17D2411A08A00677DA1 /* LessonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailViewController.swift; sourceTree = "<group>"; };
+		A4AFF1822411EA9600677DA1 /* InstructorClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4AFF1832411EA9600677DA1 /* InstructorClassCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructorClassCollectionViewCell.xib; sourceTree = "<group>"; };
 		A4EECD022407399A00824B91 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A4EECD042407410700824B91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D6A5DECF83CCE9450B46E201 /* Pods-Anywhere Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere Fitness.debug.xcconfig"; path = "Target Support Files/Pods-Anywhere Fitness/Pods-Anywhere Fitness.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +173,8 @@
 		A43F1813240866EB0087D1D8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A4AFF17F2411EA4A00677DA1 /* InstructorClass CollectionViewCell */,
+				A4AFF17424119C0F00677DA1 /* LessonTableViewCell */,
 				A46AB24B241168E300099305 /* ClassTableViewCell */,
 				A43F18182408671E0087D1D8 /* ClassCollectionViewCell */,
 			);
@@ -260,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				A46AB255241177B300099305 /* ClassDetailViewController.swift */,
+				A4AFF17B2411A05C00677DA1 /* LessonTableViewController.swift */,
+				A4AFF17D2411A08A00677DA1 /* LessonDetailViewController.swift */,
 			);
 			path = "Class ViewControllers";
 			sourceTree = "<group>";
@@ -301,6 +317,24 @@
 				A4820FB224063AB80045D379 /* UbuntuMono-RI.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A4AFF17424119C0F00677DA1 /* LessonTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4AFF17724119C3300677DA1 /* LessonTableViewCell.swift */,
+				A4AFF17824119C3300677DA1 /* LessonTableViewCell.xib */,
+			);
+			path = LessonTableViewCell;
+			sourceTree = "<group>";
+		};
+		A4AFF17F2411EA4A00677DA1 /* InstructorClass CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4AFF1822411EA9600677DA1 /* InstructorClassCollectionViewCell.swift */,
+				A4AFF1832411EA9600677DA1 /* InstructorClassCollectionViewCell.xib */,
+			);
+			path = "InstructorClass CollectionViewCell";
 			sourceTree = "<group>";
 		};
 		D62EB3F069255DB6C3B7C8A7 /* Frameworks */ = {
@@ -374,6 +408,7 @@
 				A4820FB724063AB80045D379 /* Ubuntu-R.ttf in Resources */,
 				A4820FBC24063AB80045D379 /* UbuntuMono-R.ttf in Resources */,
 				A446C35824063791009AFC57 /* LaunchScreen.storyboard in Resources */,
+				A4AFF1852411EA9600677DA1 /* InstructorClassCollectionViewCell.xib in Resources */,
 				A4820FB824063AB80045D379 /* UbuntuMono-B.ttf in Resources */,
 				A4820FB624063AB80045D379 /* Ubuntu-B.ttf in Resources */,
 				A4820FB924063AB80045D379 /* Ubuntu-RI.ttf in Resources */,
@@ -392,6 +427,7 @@
 				A46AB2512411691000099305 /* ClassTableViewCell.xib in Resources */,
 				A4820FBF24063AB80045D379 /* UbuntuMono-RI.ttf in Resources */,
 				A4820FC124063AB80045D379 /* Ubuntu-MI.ttf in Resources */,
+				A4AFF17A24119C3300677DA1 /* LessonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,9 +482,12 @@
 			files = (
 				A43F1816240867180087D1D8 /* ClassCollectionViewCell.swift in Sources */,
 				A446C34C2406378E009AFC57 /* AppDelegate.swift in Sources */,
+				A4AFF1842411EA9600677DA1 /* InstructorClassCollectionViewCell.swift in Sources */,
 				A4EECD032407399A00824B91 /* SignUpViewController.swift in Sources */,
 				A4820FC52406F1CE0045D379 /* AccountSelectionViewController.swift in Sources */,
+				A4AFF17E2411A08A00677DA1 /* LessonDetailViewController.swift in Sources */,
 				A46AB2532411775B00099305 /* SearchFilterViewController.swift in Sources */,
+				A4AFF17C2411A05C00677DA1 /* LessonTableViewController.swift in Sources */,
 				A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */,
 				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
 				A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */,
@@ -466,6 +505,7 @@
 				A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */,
 				A2AACD4C240889CB00C25EEF /* Client.swift in Sources */,
 				A2F0D9182408DE080039F361 /* FirebaseController.swift in Sources */,
+				A4AFF17924119C3300677DA1 /* LessonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
