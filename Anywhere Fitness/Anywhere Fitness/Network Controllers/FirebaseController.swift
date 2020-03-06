@@ -40,12 +40,16 @@ class FirebaseController {
                 "instructor" : false,
             ])
         case .instructor:
-            print("instructor")
+            db.collection("clients").addDocument(data: [
+                "email" : "\(user.email)",
+                "id" : "\(user.id.uuidString)",
+                "instructor" : true,
+            ])
         }
     }
     
     // Upon login, the firebaseLoginUser() method will need to find the users' id in the database to determine whether you are an instructor or a client, and then populate the appropriate environment inside the app.
-    func firebaseLoginUser(email: String, password: String) {
+    func firebaseLoginUser(email: String, password: String, signInAccountType: SignupAccountType) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             guard self != nil else { return }
             if let error = error {
