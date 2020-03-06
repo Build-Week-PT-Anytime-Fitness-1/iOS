@@ -34,13 +34,13 @@ class FirebaseController {
         
         switch signupAccountType {
         case .client:
-            db.collection("clients").addDocument(data: [
+            db.collection("clients").document("\(user.id)").setData([
                 "email" : "\(user.email)",
                 "id" : "\(user.id.uuidString)",
                 "instructor" : false,
             ])
         case .instructor:
-            db.collection("clients").addDocument(data: [
+            db.collection("clients").document("\(user.id.uuidString)").setData([
                 "email" : "\(user.email)",
                 "id" : "\(user.id.uuidString)",
                 "instructor" : true,
@@ -50,12 +50,24 @@ class FirebaseController {
     
     // Upon login, the firebaseLoginUser() method will need to find the users' id in the database to determine whether you are an instructor or a client, and then populate the appropriate environment inside the app.
     func firebaseLoginUser(email: String, password: String, signInAccountType: SignupAccountType) {
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-            guard self != nil else { return }
-            if let error = error {
-                print("\(error)")
-            } else {
-                print("Auth Result: \(String(describing: authResult))")
+        switch signInAccountType {
+        case .client:
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                guard self != nil else { return }
+                if let error = error {
+                    print("\(error)")
+                } else {
+                    print("Auth Result: \(String(describing: authResult))")
+                }
+            }
+        case .instructor:
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                guard self != nil else { return }
+                if let error = error {
+                    print("\(error)")
+                } else {
+                    print("Auth Result: \(String(describing: authResult))")
+                }
             }
         }
     }
@@ -67,7 +79,8 @@ class FirebaseController {
                      duration: String,
                      intensity: IntensityLevel,
                      capacity: Int,
-                     id: UUID = UUID()) -> ExerciseClass {
+                     id: UUID = UUID(),
+                     user: User) -> ExerciseClass {
         
         let newClass = ExerciseClass(name: name,
                                      location: location,
@@ -79,21 +92,16 @@ class FirebaseController {
                                      maxClassSize: capacity,
                                      id: id)
         
-        let requestURL = baseURL.appendingPathExtension("json")
-        var request = URLRequest(url: requestURL)
-        request.httpMethod = HTTPMethod.post.rawValue
-        
-        URLSession.shared.dataTask(with: request) { (_, response, error) in
-            if let error = error {
-                NSLog("Error POSTing new class: \(error)")
-                return
-            }
-            
-            if let response = response as? HTTPURLResponse,
-                response.statusCode != 201 {
-                NSLog("Response status code: \(response.statusCode)")
-            }
-        }.resume()
+        db.collection("classes").document("\(id.uuidString)").setData([
+            "name" : "\(name)",
+            "location" : "\(location)",
+            "exerciseType" : "\(type.rawValue)",
+            "duration" : "\(duration)",
+            "intensityLevel" : "\(intensity.rawValue)",
+            "attendees" : "\(capacity)",
+            "id" : "\(id.uuidString)",
+            "instructorID" : "\(user.email)"
+        ])
         
         return newClass
     }

@@ -238,6 +238,7 @@
                                     <segment title="Client"/>
                                     <segment title="Instructor"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.79215686269999996" green="0.1215686275" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUO-P1-SGE">
                                 <rect key="frame" x="106" y="714" width="163" height="44"/>

@@ -73,7 +73,14 @@ class LoginViewController: UIViewController {
             let password = passwordTextField.text else { return }
         
         if !email.isEmpty && !password.isEmpty {
-            firebaseController.firebaseLoginUser(email: email, password: password)
+            switch loginTypeSegmentedControl.selectedSegmentIndex {
+            case 0:
+                firebaseController.firebaseLoginUser(email: email, password: password, signInAccountType: .client)
+            case 1:
+                firebaseController.firebaseLoginUser(email: email, password: password, signInAccountType: .instructor)
+            default:
+                print("Somehow impossibly you've hit the unknown default. This feels unnecessary but it gets rid of the `Switch must be exhaustive` error")
+            }
         } else {
             let alert = UIAlertController(title: "Oops!", message: "Please fill out all the required text fields before logging in.", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Ok", style: .default)
