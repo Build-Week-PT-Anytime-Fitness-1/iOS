@@ -151,7 +151,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zlX-Cx-43p">
-                                <rect key="frame" x="16" y="251.66666666666669" width="343" height="145.66666666666669"/>
+                                <rect key="frame" x="16" y="282.66666666666669" width="343" height="145.66666666666669"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Jpv-TG-kQb">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="69.333333333333329"/>
@@ -163,7 +163,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6W-2h-Yh2">
-                                                <rect key="frame" x="0.0" y="25.333333333333343" width="343" height="44"/>
+                                                <rect key="frame" x="0.0" y="25.333333333333314" width="343" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="IPA-sb-dwS"/>
                                                 </constraints>
@@ -177,7 +177,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gcw-sp-x2B">
-                                        <rect key="frame" x="0.0" y="77.333333333333343" width="343" height="68.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="77.333333333333314" width="343" height="68.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHm-vB-pz8">
                                                 <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="19.333333333333332"/>
@@ -208,7 +208,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ola-zs-viI">
-                                <rect key="frame" x="15.999999999999993" y="413.33333333333331" width="101.33333333333331" height="16"/>
+                                <rect key="frame" x="15.999999999999993" y="448.33333333333331" width="101.33333333333331" height="16"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGl-AD-rk5">
                                         <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
@@ -232,8 +232,15 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yFP-LO-nGX">
+                                <rect key="frame" x="20" y="231.66666666666666" width="335" height="31.999999999999972"/>
+                                <segments>
+                                    <segment title="Client"/>
+                                    <segment title="Instructor"/>
+                                </segments>
+                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUO-P1-SGE">
-                                <rect key="frame" x="106" y="549.33333333333337" width="163" height="44"/>
+                                <rect key="frame" x="106" y="714" width="163" height="44"/>
                                 <color key="backgroundColor" red="0.82651406530000004" green="0.2419953346" blue="0.3365478516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Cdf-Hn-Cev"/>
@@ -252,19 +259,23 @@
                         </subviews>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Ola-zs-viI" firstAttribute="top" secondItem="zlX-Cx-43p" secondAttribute="bottom" constant="16" id="3hd-Z3-aH5"/>
-                            <constraint firstItem="rUO-P1-SGE" firstAttribute="top" secondItem="Ola-zs-viI" secondAttribute="bottom" constant="120" id="6fR-ly-2JR"/>
+                            <constraint firstItem="Ola-zs-viI" firstAttribute="top" secondItem="zlX-Cx-43p" secondAttribute="bottom" constant="20" id="BGd-cU-icr"/>
                             <constraint firstItem="qd1-bY-oXQ" firstAttribute="leading" secondItem="3xG-Tj-4Wd" secondAttribute="leading" constant="8" id="BHN-hr-Imd"/>
+                            <constraint firstItem="zlX-Cx-43p" firstAttribute="top" secondItem="yFP-LO-nGX" secondAttribute="bottom" constant="20" id="EKU-VK-Cyq"/>
+                            <constraint firstItem="3xG-Tj-4Wd" firstAttribute="bottom" secondItem="rUO-P1-SGE" secondAttribute="bottom" constant="20" id="Lla-ZT-eEl"/>
+                            <constraint firstItem="yFP-LO-nGX" firstAttribute="leading" secondItem="3xG-Tj-4Wd" secondAttribute="leading" constant="20" id="OTX-gE-izZ"/>
                             <constraint firstItem="qd1-bY-oXQ" firstAttribute="top" secondItem="7gc-sG-FtB" secondAttribute="bottom" constant="40" id="PlF-S8-Tf4"/>
+                            <constraint firstItem="yFP-LO-nGX" firstAttribute="centerX" secondItem="3xG-Tj-4Wd" secondAttribute="centerX" id="QsO-iT-gQf"/>
+                            <constraint firstItem="3xG-Tj-4Wd" firstAttribute="trailing" secondItem="yFP-LO-nGX" secondAttribute="trailing" constant="20" id="TLw-mC-qms"/>
                             <constraint firstItem="rUO-P1-SGE" firstAttribute="centerX" secondItem="3xG-Tj-4Wd" secondAttribute="centerX" id="Teu-eZ-JRs"/>
                             <constraint firstItem="7gc-sG-FtB" firstAttribute="top" secondItem="bo0-pX-sos" secondAttribute="top" constant="50" id="YMP-1Y-TPN"/>
                             <constraint firstItem="Ola-zs-viI" firstAttribute="leading" secondItem="3xG-Tj-4Wd" secondAttribute="leading" constant="16" id="fNj-az-BQF"/>
                             <constraint firstItem="3xG-Tj-4Wd" firstAttribute="trailing" secondItem="qd1-bY-oXQ" secondAttribute="trailing" constant="8" id="gwg-hQ-NWh"/>
                             <constraint firstItem="qd1-bY-oXQ" firstAttribute="centerX" secondItem="3xG-Tj-4Wd" secondAttribute="centerX" id="meQ-Vs-bee"/>
-                            <constraint firstItem="zlX-Cx-43p" firstAttribute="top" secondItem="qd1-bY-oXQ" secondAttribute="bottom" constant="40" id="oFt-Y9-93E"/>
                             <constraint firstItem="3xG-Tj-4Wd" firstAttribute="trailing" secondItem="zlX-Cx-43p" secondAttribute="trailing" constant="16" id="tQi-AX-ZzS"/>
                             <constraint firstItem="zlX-Cx-43p" firstAttribute="leading" secondItem="3xG-Tj-4Wd" secondAttribute="leading" constant="16" id="uu3-Km-k22"/>
                             <constraint firstItem="7gc-sG-FtB" firstAttribute="centerX" secondItem="3xG-Tj-4Wd" secondAttribute="centerX" id="xrZ-I8-FOV"/>
+                            <constraint firstItem="yFP-LO-nGX" firstAttribute="top" secondItem="qd1-bY-oXQ" secondAttribute="bottom" constant="20" id="zz1-rO-I5P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3xG-Tj-4Wd"/>
                     </view>
@@ -272,6 +283,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="u6W-2h-Yh2" id="C7e-aL-6zy"/>
                         <outlet property="loginButton" destination="rUO-P1-SGE" id="qmg-vb-xEA"/>
+                        <outlet property="loginTypeSegmentedControl" destination="yFP-LO-nGX" id="GuE-wD-TIL"/>
                         <outlet property="passwordTextField" destination="TDk-pB-DGC" id="5EZ-2t-3yv"/>
                         <outlet property="showPasswordButton" destination="rGl-AD-rk5" id="Bsr-d7-7mj"/>
                     </connections>

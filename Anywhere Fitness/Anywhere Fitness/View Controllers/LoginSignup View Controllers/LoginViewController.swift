@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var showPasswordButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginTypeSegmentedControl: UISegmentedControl!
     
     //MARK: - Properties
     var showPassword: Bool = false
