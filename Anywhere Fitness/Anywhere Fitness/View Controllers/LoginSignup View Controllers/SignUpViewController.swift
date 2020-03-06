@@ -23,6 +23,7 @@ class SignUpViewController: UIViewController {
     var showPassword: Bool = false
     var selectedAccountType: SignupAccountType?
     
+    var firebaseController = FirebaseController()
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -79,6 +80,16 @@ class SignUpViewController: UIViewController {
         } else {
             showPassword = false
             showPasswordButton.layer.backgroundColor = UIColor.clear.cgColor
+        }
+    }
+    
+    
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        if let email = emailTextField.text,
+            !email.isEmpty,
+            let password = passwordTextField.text,
+            !password.isEmpty {
+            //firebaseController.firebaseRegisterNewUser(user: email, signupAccountType: password)
         }
     }
     
