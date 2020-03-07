@@ -254,7 +254,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="hNo-Tw-NaG" eventType="touchUpInside" id="ye0-Fv-8lu"/>
-                                    <segue destination="cPH-ZU-qqM" kind="presentation" modalPresentationStyle="fullScreen" id="lEE-i6-pIs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -287,11 +286,13 @@
                         <outlet property="loginTypeSegmentedControl" destination="yFP-LO-nGX" id="GuE-wD-TIL"/>
                         <outlet property="passwordTextField" destination="TDk-pB-DGC" id="5EZ-2t-3yv"/>
                         <outlet property="showPasswordButton" destination="rGl-AD-rk5" id="Bsr-d7-7mj"/>
+                        <segue destination="Nec-Rr-TY6" kind="presentation" identifier="InstructorHomeSegue" modalPresentationStyle="fullScreen" id="JMz-LU-2vl"/>
+                        <segue destination="cPH-ZU-qqM" kind="presentation" identifier="ClientHomeSegue" modalPresentationStyle="fullScreen" id="wSK-cG-Pyg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDt-Tc-RQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="660" y="785"/>
+            <point key="canvasLocation" x="2964" y="1054"/>
         </scene>
         <!--ClientHomePage-->
         <scene sceneID="W2Y-pd-aj2">
@@ -299,7 +300,15 @@
                 <viewControllerPlaceholder storyboardName="ClientHomePage" id="cPH-ZU-qqM" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWc-QN-DD2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1401" y="785"/>
+            <point key="canvasLocation" x="3716" y="1091"/>
+        </scene>
+        <!--InstructorHomePage-->
+        <scene sceneID="t13-kc-EcE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InstructorHomePage" id="Nec-Rr-TY6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRW-WW-3Ym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3737" y="1015"/>
         </scene>
         <!--Account Selection View Controller-->
         <scene sceneID="uXj-SN-0zG">
@@ -687,6 +696,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpButtonPressed:" destination="wNB-Xs-IMf" eventType="touchUpInside" id="YgO-HB-DQx"/>
+                                    <segue destination="hNo-Tw-NaG" kind="show" id="DsT-Hx-Jhy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -750,5 +760,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="l1X-JE-FSi"/>
+        <segue reference="DsT-Hx-Jhy"/>
     </inferredMetricsTieBreakers>
 </document>
