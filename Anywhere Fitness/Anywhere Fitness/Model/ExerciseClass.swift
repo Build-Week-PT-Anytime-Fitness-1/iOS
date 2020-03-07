@@ -19,17 +19,17 @@ struct ExerciseClass {
 }
 
 enum ExerciseType: String {
-    case cardio
-    case strengthTraining
-    case hiit
-    case other
+    case cardio = "cardio"
+    case strengthTraining = "strengthTraining"
+    case hiit = "hiit"
+    case other = "other"
 }
 
 enum IntensityLevel: String {
-    case easy
-    case medium
-    case hard
-    case extreme
+    case easy = "easy"
+    case medium = "medium"
+    case hard = "hard"
+    case extreme = "extreme"
 }
 
 struct PunchPass {
