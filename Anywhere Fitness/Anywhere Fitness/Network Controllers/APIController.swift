@@ -9,5 +9,5 @@
 import Foundation
 
 class APIController {
-    
+    let baseURL = URL(string: "https://anywhere-fitness1.herokuapp.com/")!
 }
