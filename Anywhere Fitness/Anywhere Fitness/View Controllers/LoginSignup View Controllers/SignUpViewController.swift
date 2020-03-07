@@ -88,8 +88,11 @@ class SignUpViewController: UIViewController {
         if let email = emailTextField.text,
             !email.isEmpty,
             let password = passwordTextField.text,
-            !password.isEmpty {
-            //firebaseController.firebaseRegisterNewUser(user: email, signupAccountType: password)
+            !password.isEmpty,
+            let accountType = selectedAccountType {
+            
+            firebaseController.firebaseRegisterNewUser(email: email, password: password, signupAccountType: accountType)
+            
         }
     }
     
