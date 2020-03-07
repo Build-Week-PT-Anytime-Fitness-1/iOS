@@ -18,14 +18,14 @@ struct ExerciseClass {
     var id: UUID
 }
 
-enum ExerciseType {
+enum ExerciseType: String {
     case cardio
     case strengthTraining
     case hiit
     case other
 }
 
-enum IntensityLevel {
+enum IntensityLevel: String {
     case easy
     case medium
     case hard
