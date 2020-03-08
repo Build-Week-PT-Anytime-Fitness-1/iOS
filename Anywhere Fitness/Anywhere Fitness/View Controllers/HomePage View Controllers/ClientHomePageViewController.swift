@@ -16,10 +16,13 @@ class ClientHomePageViewController: UIViewController {
     @IBOutlet weak var newClassesCollectionView: UICollectionView!
     @IBOutlet weak var statusBarView: UIView!
     
+    var firebaseController = FirebaseController()
+    
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+//        firebaseController.fetchAllClasses()
     }
     
     //MARK: - Private Functions

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseFirestore
 import Firebase
 
 enum HTTPMethod: String {
@@ -38,7 +39,7 @@ class FirebaseController {
         
         switch signupAccountType {
         case .client:
-            db.collection("clients").document("\(user.id)").setData([
+            db.collection("clients").document("\(user.id.uuidString)").setData([
                 "email" : "\(user.email)",
                 "id" : "\(user.id.uuidString)",
                 "instructor" : false,
@@ -82,7 +83,7 @@ class FirebaseController {
                      startTime: Date,
                      duration: String,
                      intensity: IntensityLevel,
-                     capacity: Int,
+                     capacity: Double,
                      id: UUID = UUID(),
                      user: User) -> ExerciseClass {
         
@@ -92,7 +93,7 @@ class FirebaseController {
                                      startTime: startTime,
                                      duration: duration,
                                      intensityLevel: intensity,
-                                     attendees: 1,
+                                     attendees: 0,
                                      maxClassSize: capacity,
                                      id: id)
         
@@ -110,18 +111,23 @@ class FirebaseController {
         return newClass
     }
     
-    func fetchAllClasses() {
+    func fetchAllClasses() -> [ExerciseClass] {
+        var classes: [ExerciseClass] = []
+        
         db.collection("classes").getDocuments { (snapshot, error) in
+
             if let error = error {
-                print("Error: \(error)")
+                print("Error FETCHING CLASSES: \(error)")
                 return
             }
-            
+
             if let documents = snapshot?.documents {
                 for document in documents {
-                    print("\(document)")
+                   let newClass = ExerciseClass(snapshot: document)
+                    classes.append(newClass)
                 }
             }
         }
+        return classes
     }
 }
