@@ -14,6 +14,7 @@ class ClientHomePageViewController: UIViewController {
     @IBOutlet weak var nearbyPopularCollectionView: UICollectionView!
     @IBOutlet weak var preferenceCollectionView: UICollectionView!
     @IBOutlet weak var newClassesCollectionView: UICollectionView!
+    @IBOutlet weak var statusBarView: UIView!
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -27,14 +28,14 @@ class ClientHomePageViewController: UIViewController {
         if let navBar = navigationController?.navigationBar {
             ThemeController.shared.adjustHomePageNavigationBar(for: navBar)
         }
-            
-        //Configure StatusBar
-        navigationController?.setStatusBar(backgroundColor: ThemeController.shared.redButtonColor)
         
         //Configure UITabBar
         if let tabBar = tabBarController?.tabBar {
             ThemeController.shared.adjustHomePageTabBar(for: tabBar)
         }
+        
+        //Configure statusBarView
+        statusBarView.backgroundColor = ThemeController.shared.redButtonColor
         
         //Configure CollectionViews
         nearbyPopularCollectionView.delegate = self

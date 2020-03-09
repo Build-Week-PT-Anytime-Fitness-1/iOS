@@ -51,22 +51,16 @@ class ThemeController {
     func adjustHomePageTabBar(for tabBar: UITabBar) {
         tabBar.backgroundImage = UIImage()
         tabBar.tintColor = lightTextIconColor
+        tabBar.barTintColor = darkGrayBackground
     }
     
-}
-
-extension UINavigationController {
-
-    func setStatusBar(backgroundColor: UIColor) {
-        let statusBarFrame: CGRect
-        if #available(iOS 13.0, *) {
-            statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero
-        } else {
-            statusBarFrame = UIApplication.shared.statusBarFrame
+    func setStatusBar(view: UIView) -> UIView {
+        let statusBar =  UIView()
+        if let statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame {
+            statusBar.frame = statusBarFrame
         }
-        let statusBarView = UIView(frame: statusBarFrame)
-        statusBarView.backgroundColor = backgroundColor
-        view.addSubview(statusBarView)
+        statusBar.backgroundColor = redButtonColor
+        return statusBar
     }
-
+    
 }
