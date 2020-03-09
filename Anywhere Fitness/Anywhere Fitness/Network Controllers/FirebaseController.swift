@@ -10,6 +10,10 @@ import Foundation
 import FirebaseFirestore
 import Firebase
 
+protocol ClassesFetched {
+    func classesWereFetched()
+}
+
 enum HTTPMethod: String {
     case get = "GET"
     case put = "PUT"
@@ -21,6 +25,8 @@ class FirebaseController {
     let baseURL = URL(string: "https://anywhere-fitness-1.firebaseio.com/")!
     let db = Firestore.firestore()
     
+    var classes: [ExerciseClass] = []
+    var delegate: ClassesFetched?
     
     // In an attempt to accomodate Firebase' lack of ability to add multiple parameters for new user registration and auth, instead just creating instructors and users altogether and then sorting where the users' email and id is stored based on the signupAccountType.
     
@@ -111,9 +117,7 @@ class FirebaseController {
         return newClass
     }
     
-    func fetchAllClasses() -> [ExerciseClass] {
-        var classes: [ExerciseClass] = []
-        
+    func fetchAllClasses() {
         db.collection("classes").getDocuments { (snapshot, error) in
 
             if let error = error {
@@ -123,11 +127,13 @@ class FirebaseController {
 
             if let documents = snapshot?.documents {
                 for document in documents {
-                   let newClass = ExerciseClass(snapshot: document)
-                    classes.append(newClass)
+                    let newClass = ExerciseClass(snapshot: document)
+                    self.classes.append(newClass)
                 }
+                
+                self.delegate?.classesWereFetched()
             }
         }
-        return classes
+        
     }
 }
