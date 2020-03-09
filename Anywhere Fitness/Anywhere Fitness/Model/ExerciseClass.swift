@@ -18,18 +18,18 @@ struct ExerciseClass {
     var id: UUID
 }
 
-enum ExerciseType {
-    case cardio
-    case strengthTraining
-    case hiit
-    case other
+enum ExerciseType: String {
+    case cardio = "cardio"
+    case strengthTraining = "strengthTraining"
+    case hiit = "hiit"
+    case other = "other"
 }
 
-enum IntensityLevel {
-    case easy
-    case medium
-    case hard
-    case extreme
+enum IntensityLevel: String {
+    case easy = "easy"
+    case medium = "medium"
+    case hard = "hard"
+    case extreme = "extreme"
 }
 
 struct PunchPass {
