@@ -90,8 +90,7 @@ class FirebaseController {
                      duration: String,
                      intensity: IntensityLevel,
                      capacity: Double,
-                     id: UUID = UUID(),
-                     user: String) -> ExerciseClass {
+                     id: UUID = UUID()) -> ExerciseClass {
         
         let newClass = ExerciseClass(name: name,
                                      location: location,
@@ -112,7 +111,6 @@ class FirebaseController {
             "intensityLevel" : "\(intensity.rawValue)",
             "attendees" : "\(capacity)",
             "id" : "\(id.uuidString)",
-            "instructorID" : "\(user)"
         ])
         
         return newClass
