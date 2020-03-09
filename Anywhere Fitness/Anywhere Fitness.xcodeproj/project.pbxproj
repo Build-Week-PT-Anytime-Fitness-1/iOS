@@ -58,6 +58,8 @@
 		A4AFF17E2411A08A00677DA1 /* LessonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFF17D2411A08A00677DA1 /* LessonDetailViewController.swift */; };
 		A4AFF1842411EA9600677DA1 /* InstructorClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFF1822411EA9600677DA1 /* InstructorClassCollectionViewCell.swift */; };
 		A4AFF1852411EA9600677DA1 /* InstructorClassCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AFF1832411EA9600677DA1 /* InstructorClassCollectionViewCell.xib */; };
+		A4C37E052415ED44006DF6A0 /* InstructorClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C37E042415ED44006DF6A0 /* InstructorClassesViewController.swift */; };
+		A4C37E072415EE6A006DF6A0 /* AddNewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C37E062415EE6A006DF6A0 /* AddNewClassViewController.swift */; };
 		A4EECD032407399A00824B91 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EECD022407399A00824B91 /* SignUpViewController.swift */; };
 		A4EECD052407410700824B91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EECD042407410700824B91 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -117,6 +119,8 @@
 		A4AFF17D2411A08A00677DA1 /* LessonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailViewController.swift; sourceTree = "<group>"; };
 		A4AFF1822411EA9600677DA1 /* InstructorClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorClassCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4AFF1832411EA9600677DA1 /* InstructorClassCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructorClassCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4C37E042415ED44006DF6A0 /* InstructorClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorClassesViewController.swift; sourceTree = "<group>"; };
+		A4C37E062415EE6A006DF6A0 /* AddNewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewClassViewController.swift; sourceTree = "<group>"; };
 		A4EECD022407399A00824B91 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A4EECD042407410700824B91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D6A5DECF83CCE9450B46E201 /* Pods-Anywhere Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere Fitness.debug.xcconfig"; path = "Target Support Files/Pods-Anywhere Fitness/Pods-Anywhere Fitness.debug.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 		A446C36124063817009AFC57 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A4C37E032415ED11006DF6A0 /* Instructor ViewControllers */,
 				A46AB2542411779F00099305 /* Class ViewControllers */,
 				A446C366240638DB009AFC57 /* LoginSignup View Controllers */,
 				A43F180A240864E00087D1D8 /* HomePage View Controllers */,
@@ -355,6 +360,15 @@
 				A4AFF1832411EA9600677DA1 /* InstructorClassCollectionViewCell.xib */,
 			);
 			path = "InstructorClass CollectionViewCell";
+			sourceTree = "<group>";
+		};
+		A4C37E032415ED11006DF6A0 /* Instructor ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4C37E042415ED44006DF6A0 /* InstructorClassesViewController.swift */,
+				A4C37E062415EE6A006DF6A0 /* AddNewClassViewController.swift */,
+			);
+			path = "Instructor ViewControllers";
 			sourceTree = "<group>";
 		};
 		D62EB3F069255DB6C3B7C8A7 /* Frameworks */ = {
@@ -511,6 +525,8 @@
 				A4AFF17C2411A05C00677DA1 /* LessonTableViewController.swift in Sources */,
 				A2D5626D24160DB1005578AA /* DataModelController.swift in Sources */,
 				A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */,
+				A4C37E052415ED44006DF6A0 /* InstructorClassesViewController.swift in Sources */,
+				A4C37E072415EE6A006DF6A0 /* AddNewClassViewController.swift in Sources */,
 				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
 				A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */,
 				A473EEA5240728D60003B86A /* ThemeController.swift in Sources */,
