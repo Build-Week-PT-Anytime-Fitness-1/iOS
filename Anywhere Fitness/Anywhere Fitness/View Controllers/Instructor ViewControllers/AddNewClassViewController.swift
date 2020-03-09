@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class AddNewClassViewController: UIViewController {
 
@@ -36,6 +37,7 @@ class AddNewClassViewController: UIViewController {
     let firebaseController = FirebaseController()
     var selectedClassType: ExerciseType?
     var intensityLevel: IntensityLevel?
+    var classWasCreatedDelegate: NewClassCreated?
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -86,6 +88,8 @@ class AddNewClassViewController: UIViewController {
         for textField in textFields {
             textField?.delegate = self
         }
+        
+        aboutClassTextView.delegate = self
     }
 
     
@@ -101,9 +105,17 @@ class AddNewClassViewController: UIViewController {
         
         let startDate = startTimeDatePicker.date
         
-        let _ = firebaseController.createClass(name: classNameTextField.text!, location: locationTextField.text!, type: classType, startTime: startDate, duration: classDurationTextField.text!, intensity: intensityLevel, capacity: 0.0)
+        var instructorEmail: String?
+        if let currentUser = Auth.auth().currentUser {
+            instructorEmail = currentUser.email
+        }
         
-        navigationController?.popViewController(animated: true)
+        let _ = firebaseController.createClass(name: classNameTextField.text!, location: locationTextField.text!, type: classType, startTime: startDate, duration: classDurationTextField.text!, intensity: intensityLevel, capacity: 0.0, instructorEmail: instructorEmail ?? "noemail@testmail.com")
+        
+        if let delegate = classWasCreatedDelegate {
+            delegate.updateClassTableView()
+            navigationController?.popViewController(animated: true)
+        }
     }
     
     @IBAction func classTypeSelected(_ sender: UIButton) {
@@ -180,6 +192,14 @@ extension AddNewClassViewController: UITextFieldDelegate {
     }
 }
 
-extension AddNewClassViewController: UIPickerViewDelegate {
+extension AddNewClassViewController: UITextViewDelegate {
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if (text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
     
 }
