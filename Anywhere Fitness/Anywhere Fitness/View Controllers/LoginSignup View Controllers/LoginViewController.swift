@@ -92,6 +92,14 @@ class LoginViewController: UIViewController {
     }
     
     
+    //MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ClientHomeSegue" {
+            guard let clientHomeVC = segue.destination as? ClientHomePageViewController else { return }
+            
+        }
+    }
+    
 }
 
 extension LoginViewController: UITextFieldDelegate {
