@@ -32,7 +32,7 @@ class FirebaseController {
     
     // TODO: Add ability to store users name that's input in the login/signup storyboards
     func firebaseRegisterNewUser(email: String, password: String, signupAccountType: SignupAccountType) {
-        let user = User(email: email, password: password, id: UUID())
+        let user = User(email: email, password: password, name: "", id: UUID())
         
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             if let error = error {
@@ -90,7 +90,8 @@ class FirebaseController {
                      duration: String,
                      intensity: IntensityLevel,
                      capacity: Double,
-                     id: UUID = UUID()) -> ExerciseClass {
+                     id: UUID = UUID(),
+                     user: User) -> ExerciseClass {
         
         let newClass = ExerciseClass(name: name,
                                      location: location,

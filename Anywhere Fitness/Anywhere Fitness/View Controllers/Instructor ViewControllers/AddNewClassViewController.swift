@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class AddNewClassViewController: UIViewController {
 
@@ -101,7 +102,11 @@ class AddNewClassViewController: UIViewController {
         
         let startDate = startTimeDatePicker.date
         
-        let _ = firebaseController.createClass(name: classNameTextField.text!, location: locationTextField.text!, type: classType, startTime: startDate, duration: classDurationTextField.text!, intensity: intensityLevel, capacity: 0.0)
+        if let currentUser = Auth.auth().currentUser {
+            
+        }
+        
+        let _ = firebaseController.createClass(name: classNameTextField.text!, location: locationTextField.text!, type: classType, startTime: startDate, duration: classDurationTextField.text!, intensity: intensityLevel, capacity: 0.0, user: User())
         
         navigationController?.popViewController(animated: true)
     }
