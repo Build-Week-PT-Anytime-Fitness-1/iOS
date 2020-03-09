@@ -38,10 +38,10 @@ struct ExerciseClass {
         let snapshotValue = snapshot.data()
          name = snapshotValue["name"] as? String
          location = snapshotValue["location"] as? String
-        type = snapshotValue["type"] as? ExerciseType
+        type = (snapshotValue["type"] as? ExerciseType.RawValue).map { ExerciseType(rawValue: $0) } ?? ExerciseType.other
         startTime = snapshotValue["startTime"] as? Date
         duration = snapshotValue["duration"] as? String
-        intensityLevel = snapshotValue["intensityLevel"] as? IntensityLevel
+        intensityLevel = (snapshotValue["intensityLevel"] as? IntensityLevel.RawValue).map { IntensityLevel(rawValue: $0) } ?? IntensityLevel.medium
         attendees = snapshotValue["attendees"] as? Double
         maxClassSize = snapshotValue["maxClassSize"] as? Double
      }
