@@ -115,7 +115,6 @@ extension ClientHomePageViewController: UICollectionViewDataSource {
         return nearbyCell
     }
     
-    
 }
 
 extension ClientHomePageViewController: ClassesFetched {
@@ -124,6 +123,5 @@ extension ClientHomePageViewController: ClassesFetched {
         nearbyPopularClasses = firebaseController.classes
         nearbyPopularCollectionView.reloadData()
     }
-    
     
 }
