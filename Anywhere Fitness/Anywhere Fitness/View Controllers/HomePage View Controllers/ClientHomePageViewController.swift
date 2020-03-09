@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ClientHomePageViewController: UIViewController {
 
@@ -16,10 +17,20 @@ class ClientHomePageViewController: UIViewController {
     @IBOutlet weak var newClassesCollectionView: UICollectionView!
     @IBOutlet weak var statusBarView: UIView!
     
+    let firebaseController = FirebaseController()
+    var nearbyPopularClasses: [ExerciseClass] = []
+    
     //MARK: - View Lifecycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        firebaseController.delegate = self
+        firebaseController.fetchAllClasses()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        firebaseController.fetchAllClasses()
     }
     
     //MARK: - Private Functions
@@ -49,6 +60,10 @@ class ClientHomePageViewController: UIViewController {
         newClassesCollectionView.register(UINib.init(nibName: "ClassCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "NewClassCell")
     }
     
+    private func retrieveClassesFromServer() {
+
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -70,7 +85,7 @@ extension ClientHomePageViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if collectionView == nearbyPopularCollectionView {
-            return 5
+            return nearbyPopularClasses.count
         } else if collectionView == preferenceCollectionView {
             return 3
         } else if collectionView == newClassesCollectionView {
@@ -84,7 +99,10 @@ extension ClientHomePageViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let nearbyCell = nearbyPopularCollectionView.dequeueReusableCell(withReuseIdentifier: "NearbyClassCell", for: indexPath) as? ClassCollectionViewCell else { return UICollectionViewCell() }
-        nearbyCell.classTypeLabel.text = "Yoga"
+        let indexPathRow = indexPath.row
+        if indexPathRow <= nearbyPopularClasses.count - 1 {
+            nearbyCell.exerciseClass = nearbyPopularClasses[indexPath.row]
+        }
         
         if collectionView == preferenceCollectionView {
             guard let preferenceCell = preferenceCollectionView.dequeueReusableCell(withReuseIdentifier: "PreferenceClassCell", for: indexPath) as? ClassCollectionViewCell else { return UICollectionViewCell() }
@@ -97,6 +115,16 @@ extension ClientHomePageViewController: UICollectionViewDataSource {
         }
 
         return nearbyCell
+    }
+    
+    
+}
+
+extension ClientHomePageViewController: ClassesFetched {
+    
+    func classesWereFetched() {
+        nearbyPopularClasses = firebaseController.classes
+        nearbyPopularCollectionView.reloadData()
     }
     
     

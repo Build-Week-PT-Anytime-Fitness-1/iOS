@@ -17,10 +17,18 @@ class ClassCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var classCityLabel: UILabel!
     @IBOutlet weak var classRatingLabel: UILabel!
     
+    //MARK: - Properties
+    var exerciseClass: ExerciseClass? {
+        didSet {
+            updateCellData()
+        }
+    }
+    
     //MARK: - View Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
         setupViews()
+        updateCellData()
     }
 
     //MARK: - Private Functions
@@ -29,6 +37,16 @@ class ClassCollectionViewCell: UICollectionViewCell {
         classImageView.clipsToBounds = true
         classImageView.layer.cornerRadius = 10
         classImageView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+    }
+    
+    private func updateCellData() {
+        guard let exerciseClass = exerciseClass else { return }
+        
+        classNameLabel.text = exerciseClass.name
+        classTypeLabel.text = exerciseClass.type?.rawValue ?? "Other"
+        classCityLabel.text = exerciseClass.location
+        //classRatingLabel.text = MUST ADD RATING ON API
+        //classImageView.image = MUST ADD IMAGE ON API
     }
     
 }
