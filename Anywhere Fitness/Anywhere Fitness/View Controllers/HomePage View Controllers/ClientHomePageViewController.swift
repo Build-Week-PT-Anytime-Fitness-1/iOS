@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ClientHomePageViewController: UIViewController {
 
@@ -29,6 +30,7 @@ class ClientHomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        firebaseController.fetchAllClasses()
     }
     
     //MARK: - Private Functions
