@@ -68,14 +68,14 @@ struct ExerciseClass {
     }
 }
 
-enum ExerciseType: String {
+enum ExerciseType: String, CaseIterable {
     case cardio = "cardio"
     case strengthTraining = "strengthTraining"
     case hiit = "hiit"
     case other = "other"
 }
 
-enum IntensityLevel: String {
+enum IntensityLevel: String, CaseIterable {
     case easy = "easy"
     case medium = "medium"
     case hard = "hard"
@@ -83,6 +83,7 @@ enum IntensityLevel: String {
 }
 
 struct PunchPass {
+    
     var classID: Int
     var currentPunchCount: Int
     var maxPunchCount: Int

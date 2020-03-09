@@ -12,6 +12,10 @@
 		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
 		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
 		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
+		A2D562662415FFB4005578AA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D562652415FFB4005578AA /* CoreDataStack.swift */; };
+		A2D5626924160037005578AA /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2D5626724160037005578AA /* DataModel.xcdatamodeld */; };
+		A2D5626B24160535005578AA /* DataModel+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5626A24160535005578AA /* DataModel+Convenience.swift */; };
+		A2D5626D24160DB1005578AA /* DataModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5626C24160DB1005578AA /* DataModelController.swift */; };
 		A2F0D9152408DD8E0039F361 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F0D9142408DD8E0039F361 /* APIController.swift */; };
 		A2F0D9182408DE080039F361 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F0D9172408DE080039F361 /* FirebaseController.swift */; };
 		A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD12408C04100186D8E /* ProfileViewController.swift */; };
@@ -65,6 +69,10 @@
 		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
+		A2D562652415FFB4005578AA /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A2D5626824160037005578AA /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		A2D5626A24160535005578AA /* DataModel+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataModel+Convenience.swift"; sourceTree = "<group>"; };
+		A2D5626C24160DB1005578AA /* DataModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelController.swift; sourceTree = "<group>"; };
 		A2F0D9142408DD8E0039F361 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		A2F0D9172408DE080039F361 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		A423CCD12408C04100186D8E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +141,17 @@
 				385EB16AF72DB7095FACBA63 /* Pods-Anywhere Fitness.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2D5626E24160FB7005578AA /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				A2D562652415FFB4005578AA /* CoreDataStack.swift */,
+				A2D5626724160037005578AA /* DataModel.xcdatamodeld */,
+				A2D5626C24160DB1005578AA /* DataModelController.swift */,
+				A2D5626A24160535005578AA /* DataModel+Convenience.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 		A2F0D9162408DD920039F361 /* Network Controllers */ = {
@@ -285,8 +304,9 @@
 			children = (
 				A2AACD4B240889CB00C25EEF /* Client.swift */,
 				A2AACD4D24088AE000C25EEF /* Instructor.swift */,
-				A473EEA624072AED0003B86A /* Theme Controller */,
 				A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */,
+				A2D5626E24160FB7005578AA /* Core Data */,
+				A473EEA624072AED0003B86A /* Theme Controller */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -483,19 +503,23 @@
 				A43F1816240867180087D1D8 /* ClassCollectionViewCell.swift in Sources */,
 				A446C34C2406378E009AFC57 /* AppDelegate.swift in Sources */,
 				A4AFF1842411EA9600677DA1 /* InstructorClassCollectionViewCell.swift in Sources */,
+				A2D562662415FFB4005578AA /* CoreDataStack.swift in Sources */,
 				A4EECD032407399A00824B91 /* SignUpViewController.swift in Sources */,
 				A4820FC52406F1CE0045D379 /* AccountSelectionViewController.swift in Sources */,
 				A4AFF17E2411A08A00677DA1 /* LessonDetailViewController.swift in Sources */,
 				A46AB2532411775B00099305 /* SearchFilterViewController.swift in Sources */,
 				A4AFF17C2411A05C00677DA1 /* LessonTableViewController.swift in Sources */,
+				A2D5626D24160DB1005578AA /* DataModelController.swift in Sources */,
 				A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */,
 				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
 				A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */,
 				A473EEA5240728D60003B86A /* ThemeController.swift in Sources */,
 				A46AB2502411691000099305 /* ClassTableViewCell.swift in Sources */,
+				A2D5626B24160535005578AA /* DataModel+Convenience.swift in Sources */,
 				A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */,
 				A446C34E2406378E009AFC57 /* SceneDelegate.swift in Sources */,
 				A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */,
+				A2D5626924160037005578AA /* DataModel.xcdatamodeld in Sources */,
 				A43F180E240865640087D1D8 /* InstructorHomePageViewController.swift in Sources */,
 				A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */,
 				A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */,
@@ -697,6 +721,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2D5626724160037005578AA /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2D5626824160037005578AA /* DataModel.xcdatamodel */,
+			);
+			currentVersion = A2D5626824160037005578AA /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A446C3402406378E009AFC57 /* Project object */;
 }
