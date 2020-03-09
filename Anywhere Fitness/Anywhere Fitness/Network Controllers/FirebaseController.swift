@@ -31,8 +31,8 @@ class FirebaseController {
     // In an attempt to accomodate Firebase' lack of ability to add multiple parameters for new user registration and auth, instead just creating instructors and users altogether and then sorting where the users' email and id is stored based on the signupAccountType.
     
     // TODO: Add ability to store users name that's input in the login/signup storyboards
-    func firebaseRegisterNewUser(email: String, password: String, signupAccountType: SignupAccountType) {
-        let user = User(email: email, password: password, id: UUID())
+    func firebaseRegisterNewUser(email: String, password: String, name: String, signupAccountType: SignupAccountType) {
+        let user = User(email: email, password: password, name: name, id: UUID())
         
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             if let error = error {
