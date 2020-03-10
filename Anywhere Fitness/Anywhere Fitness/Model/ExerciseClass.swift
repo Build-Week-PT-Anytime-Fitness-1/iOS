@@ -18,6 +18,7 @@ struct ExerciseClass {
     var intensityLevel: IntensityLevel?
     var attendees, maxClassSize: Double? // Maybe consider changing to a double since cloud Firestore puts all numbers as doubles
     var id: UUID?
+    var instructorEmail: String?
     
     var dictionary : [String:Any] {
          return [
@@ -30,6 +31,7 @@ struct ExerciseClass {
                  "attendees": attendees  ?? "",
                  "maxClassSize": maxClassSize  ?? "",
                  "id": id  ?? "",
+                 "instructorEmail": instructorEmail ?? ""
          ]
      }
 
@@ -44,6 +46,7 @@ struct ExerciseClass {
         intensityLevel = (snapshotValue["intensityLevel"] as? IntensityLevel.RawValue).map { IntensityLevel(rawValue: $0) } ?? IntensityLevel.medium
         attendees = snapshotValue["attendees"] as? Double
         maxClassSize = snapshotValue["maxClassSize"] as? Double
+        instructorEmail = snapshotValue["instructorEmail"] as? String
      }
     
     init(name: String,
