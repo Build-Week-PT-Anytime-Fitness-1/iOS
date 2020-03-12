@@ -1,6 +1,0 @@
-framework module Pods_Anywhere_FitnessUITests {
-  umbrella header "Pods-Anywhere FitnessUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

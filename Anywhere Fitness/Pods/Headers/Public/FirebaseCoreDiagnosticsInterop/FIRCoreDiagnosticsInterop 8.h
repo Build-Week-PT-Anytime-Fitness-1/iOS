@@ -1,1 +1,0 @@
-../../../FirebaseCoreDiagnosticsInterop/Interop/CoreDiagnostics/Public/FIRCoreDiagnosticsInterop 8.h

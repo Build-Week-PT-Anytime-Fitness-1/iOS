@@ -1,1 +1,0 @@
-../../../FirebaseCoreDiagnosticsInterop/Interop/CoreDiagnostics/Public/FIRCoreDiagnosticsData 12.h
