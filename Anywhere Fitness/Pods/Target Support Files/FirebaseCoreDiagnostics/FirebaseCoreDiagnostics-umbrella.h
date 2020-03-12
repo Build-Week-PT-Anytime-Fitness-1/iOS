@@ -10,6 +10,13 @@
 #endif
 #endif
 
+#import "firebasecore.nanopb 2.h"
+#import "firebasecore.nanopb 3.h"
+#import "firebasecore.nanopb 4.h"
+#import "firebasecore.nanopb 5.h"
+#import "firebasecore.nanopb 6.h"
+#import "firebasecore.nanopb 7.h"
+#import "firebasecore.nanopb 8.h"
 #import "firebasecore.nanopb.h"
 
 FOUNDATION_EXPORT double FirebaseCoreDiagnosticsVersionNumber;

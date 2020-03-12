@@ -135,6 +135,20 @@ class FirebaseController {
                 self.delegate?.classesWereFetched()
             }
         }
+    }
+    
+    func reserveClassSpot(classID: UUID, user: UUID) {
+        
+        db.collection("clients").document("\(user)").updateData([
+            "reservations" : FieldValue.arrayUnion(["classID"])
+        ]) { (error) in
+            if let error = error {
+                print("\(error)")
+            }
+        }
+    }
+    
+    func fetchClientsReservedClasses() {
         
     }
 }

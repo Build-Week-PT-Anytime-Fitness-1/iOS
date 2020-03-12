@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		366ED86AFEB6ADA415E062FE /* Pods_Anywhere_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E3C46D7D8BD05BE30375DA /* Pods_Anywhere_FitnessTests.framework */; };
 		99517AF3C45780450C0EE50F /* Pods_Anywhere_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638276D3E887479148D41BF8 /* Pods_Anywhere_Fitness.framework */; };
 		A27496BA240B5B3E00A6F79E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A27496B9240B5B3D00A6F79E /* GoogleService-Info.plist */; };
 		A2AACD4C240889CB00C25EEF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4B240889CB00C25EEF /* Client.swift */; };
 		A2AACD4E24088AE000C25EEF /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4D24088AE000C25EEF /* Instructor.swift */; };
 		A2AACD5024088C0500C25EEF /* ExerciseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */; };
+		A2C9E62F24171CBC00F05FAF /* ClientReserveClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C9E62E24171CBC00F05FAF /* ClientReserveClassViewController.swift */; };
 		A2D562662415FFB4005578AA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D562652415FFB4005578AA /* CoreDataStack.swift */; };
 		A2D5626924160037005578AA /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2D5626724160037005578AA /* DataModel.xcdatamodeld */; };
 		A2D5626B24160535005578AA /* DataModel+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5626A24160535005578AA /* DataModel+Convenience.swift */; };
 		A2D5626D24160DB1005578AA /* DataModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5626C24160DB1005578AA /* DataModelController.swift */; };
 		A2F0D9152408DD8E0039F361 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F0D9142408DD8E0039F361 /* APIController.swift */; };
 		A2F0D9182408DE080039F361 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F0D9172408DE080039F361 /* FirebaseController.swift */; };
+		A2FD0B19241A98C80098E9E7 /* Anywhere_FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FD0B18241A98C80098E9E7 /* Anywhere_FitnessTests.swift */; };
 		A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD12408C04100186D8E /* ProfileViewController.swift */; };
 		A423CCD52408C08500186D8E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423CCD42408C08500186D8E /* SearchViewController.swift */; };
 		A43F180C240865550087D1D8 /* ClientHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */; };
@@ -64,19 +67,36 @@
 		A4EECD052407410700824B91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EECD042407410700824B91 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A2FD0B1B241A98C80098E9E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A446C3402406378E009AFC57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A446C3472406378E009AFC57;
+			remoteInfo = "Anywhere Fitness";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		385EB16AF72DB7095FACBA63 /* Pods-Anywhere Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere Fitness.release.xcconfig"; path = "Target Support Files/Pods-Anywhere Fitness/Pods-Anywhere Fitness.release.xcconfig"; sourceTree = "<group>"; };
+		4230DCE2EF3A7049E9B875C2 /* Pods-Anywhere Fitness-Anywhere FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere Fitness-Anywhere FitnessTests.release.xcconfig"; path = "Target Support Files/Pods-Anywhere Fitness-Anywhere FitnessTests/Pods-Anywhere Fitness-Anywhere FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E67D65501851D911BEB9595 /* Pods-Anywhere FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-Anywhere FitnessTests/Pods-Anywhere FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		638276D3E887479148D41BF8 /* Pods_Anywhere_Fitness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anywhere_Fitness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A5A42AC8E282C03109D0F7 /* Pods-Anywhere Fitness-Anywhere FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere Fitness-Anywhere FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-Anywhere Fitness-Anywhere FitnessTests/Pods-Anywhere Fitness-Anywhere FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A27496B9240B5B3D00A6F79E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2AACD4B240889CB00C25EEF /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		A2AACD4D24088AE000C25EEF /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		A2AACD4F24088C0500C25EEF /* ExerciseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseClass.swift; sourceTree = "<group>"; };
+		A2C9E62E24171CBC00F05FAF /* ClientReserveClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientReserveClassViewController.swift; sourceTree = "<group>"; };
 		A2D562652415FFB4005578AA /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A2D5626824160037005578AA /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		A2D5626A24160535005578AA /* DataModel+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataModel+Convenience.swift"; sourceTree = "<group>"; };
 		A2D5626C24160DB1005578AA /* DataModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelController.swift; sourceTree = "<group>"; };
 		A2F0D9142408DD8E0039F361 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		A2F0D9172408DE080039F361 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		A2FD0B16241A98C80098E9E7 /* Anywhere FitnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Anywhere FitnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FD0B18241A98C80098E9E7 /* Anywhere_FitnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anywhere_FitnessTests.swift; sourceTree = "<group>"; };
+		A2FD0B1A241A98C80098E9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A423CCD12408C04100186D8E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A423CCD42408C08500186D8E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientHomePageViewController.swift; sourceTree = "<group>"; };
@@ -123,10 +143,20 @@
 		A4C37E062415EE6A006DF6A0 /* AddNewClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewClassViewController.swift; sourceTree = "<group>"; };
 		A4EECD022407399A00824B91 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A4EECD042407410700824B91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C3E3C46D7D8BD05BE30375DA /* Pods_Anywhere_FitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anywhere_FitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A5DECF83CCE9450B46E201 /* Pods-Anywhere Fitness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere Fitness.debug.xcconfig"; path = "Target Support Files/Pods-Anywhere Fitness/Pods-Anywhere Fitness.debug.xcconfig"; sourceTree = "<group>"; };
+		DFB855901C7A09ECA06C151E /* Pods-Anywhere FitnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anywhere FitnessTests.release.xcconfig"; path = "Target Support Files/Pods-Anywhere FitnessTests/Pods-Anywhere FitnessTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A2FD0B13241A98C80098E9E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366ED86AFEB6ADA415E062FE /* Pods_Anywhere_FitnessTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A446C3452406378E009AFC57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,6 +173,10 @@
 			children = (
 				D6A5DECF83CCE9450B46E201 /* Pods-Anywhere Fitness.debug.xcconfig */,
 				385EB16AF72DB7095FACBA63 /* Pods-Anywhere Fitness.release.xcconfig */,
+				77A5A42AC8E282C03109D0F7 /* Pods-Anywhere Fitness-Anywhere FitnessTests.debug.xcconfig */,
+				4230DCE2EF3A7049E9B875C2 /* Pods-Anywhere Fitness-Anywhere FitnessTests.release.xcconfig */,
+				4E67D65501851D911BEB9595 /* Pods-Anywhere FitnessTests.debug.xcconfig */,
+				DFB855901C7A09ECA06C151E /* Pods-Anywhere FitnessTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -167,6 +201,15 @@
 			path = "Network Controllers";
 			sourceTree = "<group>";
 		};
+		A2FD0B17241A98C80098E9E7 /* Anywhere FitnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2FD0B18241A98C80098E9E7 /* Anywhere_FitnessTests.swift */,
+				A2FD0B1A241A98C80098E9E7 /* Info.plist */,
+			);
+			path = "Anywhere FitnessTests";
+			sourceTree = "<group>";
+		};
 		A423CCD02408C01700186D8E /* Profile View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +232,7 @@
 			children = (
 				A43F180B240865550087D1D8 /* ClientHomePageViewController.swift */,
 				A43F180D240865640087D1D8 /* InstructorHomePageViewController.swift */,
+				A2C9E62E24171CBC00F05FAF /* ClientReserveClassViewController.swift */,
 			);
 			path = "HomePage View Controllers";
 			sourceTree = "<group>";
@@ -217,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				A446C34A2406378E009AFC57 /* Anywhere Fitness */,
+				A2FD0B17241A98C80098E9E7 /* Anywhere FitnessTests */,
 				A446C3492406378E009AFC57 /* Products */,
 				046EE5531908D6BFAD1322CE /* Pods */,
 				D62EB3F069255DB6C3B7C8A7 /* Frameworks */,
@@ -227,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				A446C3482406378E009AFC57 /* Anywhere Fitness.app */,
+				A2FD0B16241A98C80098E9E7 /* Anywhere FitnessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -375,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				638276D3E887479148D41BF8 /* Pods_Anywhere_Fitness.framework */,
+				C3E3C46D7D8BD05BE30375DA /* Pods_Anywhere_FitnessTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -382,6 +429,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A2FD0B15241A98C80098E9E7 /* Anywhere FitnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2FD0B1F241A98C80098E9E7 /* Build configuration list for PBXNativeTarget "Anywhere FitnessTests" */;
+			buildPhases = (
+				450A5125E5E7D66CFF259A1B /* [CP] Check Pods Manifest.lock */,
+				A2FD0B12241A98C80098E9E7 /* Sources */,
+				A2FD0B13241A98C80098E9E7 /* Frameworks */,
+				A2FD0B14241A98C80098E9E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2FD0B1C241A98C80098E9E7 /* PBXTargetDependency */,
+			);
+			name = "Anywhere FitnessTests";
+			productName = "Anywhere FitnessTests";
+			productReference = A2FD0B16241A98C80098E9E7 /* Anywhere FitnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A446C3472406378E009AFC57 /* Anywhere Fitness */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A446C35C24063791009AFC57 /* Build configuration list for PBXNativeTarget "Anywhere Fitness" */;
@@ -411,6 +477,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Eoin Lavery";
 				TargetAttributes = {
+					A2FD0B15241A98C80098E9E7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A446C3472406378E009AFC57;
+					};
 					A446C3472406378E009AFC57 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -430,11 +500,19 @@
 			projectRoot = "";
 			targets = (
 				A446C3472406378E009AFC57 /* Anywhere Fitness */,
+				A2FD0B15241A98C80098E9E7 /* Anywhere FitnessTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A2FD0B14241A98C80098E9E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A446C3462406378E009AFC57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +546,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		450A5125E5E7D66CFF259A1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anywhere FitnessTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5DA1BECF1FC3878EBCBAC14F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,6 +610,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A2FD0B12241A98C80098E9E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FD0B19241A98C80098E9E7 /* Anywhere_FitnessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A446C3442406378E009AFC57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +635,7 @@
 				A446C368240638F6009AFC57 /* LandingPageViewController.swift in Sources */,
 				A4C37E052415ED44006DF6A0 /* InstructorClassesViewController.swift in Sources */,
 				A4C37E072415EE6A006DF6A0 /* AddNewClassViewController.swift in Sources */,
+				A2C9E62F24171CBC00F05FAF /* ClientReserveClassViewController.swift in Sources */,
 				A4EECD052407410700824B91 /* LoginViewController.swift in Sources */,
 				A423CCD22408C04100186D8E /* ProfileViewController.swift in Sources */,
 				A473EEA5240728D60003B86A /* ThemeController.swift in Sources */,
@@ -551,6 +660,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A2FD0B1C241A98C80098E9E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A446C3472406378E009AFC57 /* Anywhere Fitness */;
+			targetProxy = A2FD0B1B241A98C80098E9E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		A446C35624063791009AFC57 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -563,6 +680,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A2FD0B1D241A98C80098E9E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E67D65501851D911BEB9595 /* Pods-Anywhere FitnessTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "Anywhere FitnessTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LambdaSchool.Anywhere-FitnessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anywhere Fitness.app/Anywhere Fitness";
+			};
+			name = Debug;
+		};
+		A2FD0B1E241A98C80098E9E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFB855901C7A09ECA06C151E /* Pods-Anywhere FitnessTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TX86F6EBCJ;
+				INFOPLIST_FILE = "Anywhere FitnessTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LambdaSchool.Anywhere-FitnessTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anywhere Fitness.app/Anywhere Fitness";
+			};
+			name = Release;
+		};
 		A446C35A24063791009AFC57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -718,6 +877,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A2FD0B1F241A98C80098E9E7 /* Build configuration list for PBXNativeTarget "Anywhere FitnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2FD0B1D241A98C80098E9E7 /* Debug */,
+				A2FD0B1E241A98C80098E9E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A446C3432406378E009AFC57 /* Build configuration list for PBXProject "Anywhere Fitness" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -15,4 +15,10 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 
+target 'Anywhere FitnessTests' do
+        use_frameworks!
+        inherit! :search_paths
+       #  pod 'Firebase'
+  end
+
 end
